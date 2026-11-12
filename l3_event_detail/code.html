@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>EVENT.KITA - Mahasiswa Portal</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-lowest":"#ffffff","surface-container":"#e5eeff","on-surface":"#0b1c30","on-primary-fixed-variant":"#4d17c5","surface-container-highest":"#d3e4fe","background":"#f8f9ff","surface-container-high":"#dce9ff","on-secondary-container":"#2f088f","on-secondary-fixed-variant":"#482fa7","surface-variant":"#d3e4fe","primary-container":"#7048e8","on-tertiary-fixed":"#00164e","secondary-fixed":"#e6deff","on-secondary-fixed":"#1c0062","tertiary-fixed":"#dce1ff","on-tertiary":"#ffffff","secondary-container":"#9984fd","on-tertiary-fixed-variant":"#003baf","inverse-surface":"#213145","surface-dim":"#cbdbf5","tertiary-container":"#365fd7","outline":"#7a7486","on-error":"#ffffff","outline-variant":"#cac3d7","surface-tint":"#663cdd","tertiary":"#0f45be","primary-fixed-dim":"#ccbdff","error-container":"#ffdad6","error":"#ba1a1a","on-secondary":"#ffffff","inverse-primary":"#ccbdff","on-primary":"#ffffff","on-primary-container":"#ede4ff","on-primary-fixed":"#1f005f","secondary":"#604ac1","inverse-on-surface":"#eaf1ff","surface-bright":"#f8f9ff","on-error-container":"#93000a","primary":"#5728cf","on-surface-variant":"#494455","primary-fixed":"#e7deff","secondary-fixed-dim":"#cabeff","on-background":"#0b1c30","tertiary-fixed-dim":"#b6c4ff","surface":"#f8f9ff","on-tertiary-container":"#e4e7ff","surface-container-low":"#eff4ff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-mobile":"1rem","space-xs":"0.25rem","gutter-mobile":"1rem","space-xl":"2.5rem","space-lg":"1.5rem","space-md":"1rem","space-sm":"0.5rem","gutter":"1.5rem","margin":"2rem"},"fontFamily":{"headline-lg":["Plus Jakarta Sans"],"label-md":["Inter"],"body-md":["Inter"],"headline-md":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"label-sm":["Inter"],"title-md":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-display":["Plus Jakarta Sans"],"label-lg":["Inter"],"body-lg":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-display-mobile":["Plus Jakarta Sans"]},"fontSize":{"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","fontWeight":"500"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"headline-display":["44px",{"lineHeight":"52px","fontWeight":"800"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"26px","fontWeight":"400"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","fontWeight":"700"}],"headline-display-mobile":["32px",{"lineHeight":"40px","fontWeight":"800"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-7xl mx-auto px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-2" data-path="explore" href="#"><img alt="EVENT.KITA Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrA5dgWpmXlUweALvYdAQvjg6CPGyT6yBk6gMBMlXa8XPRN7MadhfAmS2DNT7bNIjvUC8CvGy4rfffl6E7zf4eQwZBriovYKqSv9ehOmngFrx9BwqSlX8MyUEhFSlH3eq4S9_IyfTn91RqZFjYjxZ6G4R0faEC-yVUnAm8V4AEbhoUzLJflqt4HvWKPU1gK_45sjPYOrW6ZXBKgAoIzyqftBgTIaaftyBPPeeJrG9YHiXQ"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">EVENT.KITA</span></a><span class="px-2 py-0.5 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm">Mahasiswa</span></div><nav class="hidden md:flex items-center gap-2 bg-surface-container-low p-1 rounded-xl" data-active-classes="bg-primary-container text-on-primary font-label-md rounded-xl shadow-[0_4px_16px_-2px_rgba(73,48,168,0.15)]"><a aria-current="page" class="px-4 py-2 transition-colors bg-primary-container text-on-primary font-label-md rounded-xl shadow-[0_4px_16px_-2px_rgba(73,48,168,0.15)]" data-path="explore" href="#">Explore</a><a class="px-4 py-2 rounded-xl text-on-surface-variant font-label-md text-label-md transition-colors hover:text-on-surface" data-path="calendar" href="#">Calendar</a><a class="px-4 py-2 rounded-xl text-on-surface-variant font-label-md text-label-md transition-colors hover:text-on-surface" data-path="my-events" href="#">My Events</a><a class="px-4 py-2 rounded-xl text-on-surface-variant font-label-md text-label-md transition-colors hover:text-on-surface" data-path="documentation" href="#">Documentation</a></nav><div class="flex items-center gap-space-sm"><div class="relative hidden sm:block w-48 lg:w-64"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full h-10 pl-9 pr-3 rounded-xl bg-surface-container-lowest text-on-surface text-body-sm font-body-sm placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Search events, clubs..." type="text"/></div><button aria-label="Notifications" class="w-10 h-10 rounded-xl flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors relative" type="button"><span class="material-symbols-outlined">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-error"></span></button><a class="flex items-center gap-2 pl-2" data-path="my-events" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUFGcQXEGjtzNhXQPaGIDGs5e5P8eg_k8c9miHgIlj5R8vwTGyMeVKUWKkf65xF-0jgdEVBTLXc7UJRoUqYfl7WF6tdKKYD2R1If6CISvQehq-8FiPYj-Ss2LCz5xngaT1-IVekgz96C3AUGNifJQk5CB6NEwQXeWkIhKtLMgwcTGiKKp1p0fTnKASLu3AnvGdeInhZMw0m0LKbVF0v7yDM8fODppCat6HHtgAVr8v"/></a></div></div></header><main class="w-full pt-16 bg-background max-w-7xl mx-auto px-margin min-h-screen"><div class="flex flex-col w-full pb-space-xl">
+<!-- Toast Feedback Element -->
+<div class="fixed top-20 right-6 z-50 transform translate-y-[-120%] opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-3 bg-surface-container-lowest text-on-surface px-5 py-4 rounded-xl shadow-xl border-0" id="registration-toast">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">check_circle</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Pendaftaran Berhasil!</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">E-Tiket #EK-99214 telah diterbitkan di menu My Events.</p>
+</div>
+<button class="ml-4 text-outline hover:text-on-surface" onclick="dismissToast()" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Breadcrumb Navigation -->
+<nav class="flex items-center gap-2 py-space-md text-on-surface-variant font-label-md text-label-md">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">home</span>
+      Beranda
+    </a>
+<span class="material-symbols-outlined text-[14px] text-outline-variant">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Explore Events</a>
+<span class="material-symbols-outlined text-[14px] text-outline-variant">chevron_right</span>
+<span class="text-on-surface font-label-lg text-label-lg truncate max-w-xs sm:max-w-md">National AI Hackathon &amp; Tech Summit 2025</span>
+</nav>
+<!-- Hero Visual Poster & Headline Card -->
+<div class="relative w-full rounded-2xl overflow-hidden bg-surface-container-lowest shadow-md mb-space-lg">
+<div class="relative w-full h-72 sm:h-96 lg:h-[420px] bg-cover bg-center" data-alt="A futuristic modern university auditorium stage filled with vibrant purple ambient lighting, high-tech neon blue digital backdrop screens with artificial intelligence schematics, young diverse Indonesian university students collaborating with laptops, cinematic volumetric lighting, crisp photorealistic 8k render, tech festival atmosphere" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD8hcfaFvfHbc0JB8QlUIvtIQdZzADhV9t5PxJxMJ1FfvWEVGrBSbjTggCbChPJ49S6C_D22P4Z5yH8G4FvF11FKXQtH0wE2xFFkc9UpgsJbe6gzdmywzPEBXdieOWJjYGCxeK-7Us6QVxCoAD7xVzoT85gUyNVIcMlp0hd1R1sTyDsgeYeei7Ny56slZOLpMxmkLKNNmJ_m5hmtr_xlbr7UrEsEKzGJ0sy7FIBXO-6')">
+<!-- Gradient Scrim for Contrast -->
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/95 via-inverse-surface/50 to-transparent"></div>
+<!-- Top Badges inside Banner -->
+<div class="absolute top-6 left-6 right-6 flex items-center justify-between pointer-events-none">
+<div class="flex items-center gap-2">
+<span class="pointer-events-auto px-3.5 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-sm">
+            Kompetisi &amp; Seminar
+          </span>
+<span class="pointer-events-auto px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+            Trending Campus Event
+          </span>
+</div>
+<div class="flex items-center gap-2 pointer-events-auto">
+<button class="w-10 h-10 rounded-xl bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-primary transition-colors shadow-sm" title="Bagikan Event" type="button">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+<button class="w-10 h-10 rounded-xl bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-error transition-colors shadow-sm" title="Simpan ke Bookmark" type="button">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+</button>
+</div>
+</div>
+<!-- Hero Bottom Content Overlay -->
+<div class="absolute bottom-6 left-6 right-6 text-on-primary">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-surface-container-lowest/20 backdrop-blur-md text-primary-fixed mb-3">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span class="font-label-sm text-label-sm tracking-wide">ORGANISASI TERVERIFIKASI KAMPUS</span>
+</div>
+<h1 class="font-headline-display text-headline-display max-w-4xl text-white tracking-tight drop-shadow-sm leading-tight mb-3">
+          National AI Hackathon &amp; Tech Summit 2025
+        </h1>
+<div class="flex flex-wrap items-center gap-y-2 gap-x-6 text-on-primary/90 font-label-md text-label-md">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary font-headline-sm text-label-sm">
+              B
+            </div>
+<span>Diselenggarakan oleh <strong class="text-white">BEM Fasilkom x GDG on Campus</strong></span>
+</div>
+<span class="hidden sm:inline-block opacity-40">•</span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed">workspace_premium</span>
+<span>SKPI Validated (4 Poin SKK)</span>
+</div>
+<span class="hidden sm:inline-block opacity-40">•</span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed">group</span>
+<span>Terbuka untuk Seluruh Mahasiswa Aktif RI</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive State Testing Banner (For evaluation convenience) -->
+<div class="bg-surface-container-high rounded-xl p-4 mb-space-lg flex flex-col md:flex-row md:items-center justify-between gap-3 shadow-sm">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[22px]">tune</span>
+<div>
+<span class="font-title-md text-title-md text-on-surface">Simulasi State Registrasi:</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pilih kondisi ketersediaan tiket untuk menguji perubahan antarmuka.</p>
+</div>
+</div>
+<div class="inline-flex p-1 bg-surface-container-lowest rounded-xl shadow-sm gap-1 self-start md:self-auto overflow-x-auto max-w-full">
+<button class="state-tab px-3 py-1.5 rounded-lg font-label-sm text-label-sm transition-all bg-primary-container text-on-primary" id="btn-state-active" onclick="setRegistrationState('active')" type="button">
+        1. Aktif (Open)
+      </button>
+<button class="state-tab px-3 py-1.5 rounded-lg font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" id="btn-state-full" onclick="setRegistrationState('full')" type="button">
+        2. Kuota Penuh
+      </button>
+<button class="state-tab px-3 py-1.5 rounded-lg font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" id="btn-state-closed" onclick="setRegistrationState('closed')" type="button">
+        3. Ditutup
+      </button>
+<button class="state-tab px-3 py-1.5 rounded-lg font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" id="btn-state-registered" onclick="setRegistrationState('registered')" type="button">
+        4. Terdaftar
+      </button>
+</div>
+</div>
+<!-- Main Content Grid (Two-column layout) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left Column: Rich Details & Speakers (8 cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Tab Controls Container -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm p-2">
+<div class="flex items-center gap-1 overflow-x-auto pb-1 sm:pb-0" id="detail-tabs">
+<button class="tab-button active-tab px-4 py-2.5 rounded-xl font-label-md text-label-md whitespace-nowrap bg-primary-container text-on-primary transition-all" onclick="switchTab('tentang')" type="button">
+            Tentang Event
+          </button>
+<button class="tab-button px-4 py-2.5 rounded-xl font-label-md text-label-md whitespace-nowrap text-on-surface-variant hover:text-on-surface transition-all" onclick="switchTab('rundown')" type="button">
+            Jadwal &amp; Rundown
+          </button>
+<button class="tab-button px-4 py-2.5 rounded-xl font-label-md text-label-md whitespace-nowrap text-on-surface-variant hover:text-on-surface transition-all" onclick="switchTab('syarat')" type="button">
+            Syarat &amp; Ketentuan
+          </button>
+<button class="tab-button px-4 py-2.5 rounded-xl font-label-md text-label-md whitespace-nowrap text-on-surface-variant hover:text-on-surface transition-all" onclick="switchTab('benefit')" type="button">
+            Benefit &amp; E-Sertifikat
+          </button>
+<button class="tab-button px-4 py-2.5 rounded-xl font-label-md text-label-md whitespace-nowrap text-on-surface-variant hover:text-on-surface transition-all" onclick="switchTab('faq')" type="button">
+            FAQ
+          </button>
+</div>
+</div>
+<!-- Tab Content Area -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm p-space-lg">
+<!-- 1. Tab: Tentang Event -->
+<div class="tab-pane flex flex-col gap-space-md" id="tab-content-tentang">
+<h2 class="font-headline-md text-headline-md text-on-surface">Membangun Terobosan AI dari Kampus untuk Indonesia</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+            National AI Hackathon &amp; Tech Summit 2025 merupakan ajang kolaborasi inovasi terbesar antarmahasiswa se-Indonesia. Mengusung tema <em>"Generative AI &amp; Sustainable Edge Computing"</em>, peserta ditantang merancang solusi berbasis model bahasa besar (LLM) dan visi komputer untuk menangani persoalan riil di bidang edukasi, agrikultur, dan efisiensi energi berkelanjutan.
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Acara ini dirancang dalam dua segmen sinergis: <strong>Summit Konferensi Internasional</strong> di pagi hari bersama para pakar Artificial Intelligence global, dilanjutkan dengan <strong>Grand Pitching &amp; Demo Day 15 Tim Finalis Hackathon</strong> pada sesi sore.
+          </p>
+<!-- Quick Metrics Bentolet -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 my-2">
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Total Hadiah</span>
+<span class="font-title-md text-title-md text-primary mt-1">Rp 65.000.000</span>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Poin SKK / SKPI</span>
+<span class="font-title-md text-title-md text-tertiary mt-1">4.0 Poin Resmi</span>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Format Pelaksanaan</span>
+<span class="font-title-md text-title-md text-secondary mt-1">Hybrid Mode</span>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Mentorship</span>
+<span class="font-title-md text-title-md text-on-surface mt-1">1-on-1 Eksklusif</span>
+</div>
+</div>
+<!-- Download Guideline Callout -->
+<div class="p-4 rounded-xl bg-surface-container-high flex flex-col sm:flex-row sm:items-center justify-between gap-3 mt-2">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">menu_book</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Guidebook &amp; Peraturan Resmi v2.4</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Panduan teknis pengumpulan proposal, batasan dataset &amp; rubrik penilaian.</p>
+</div>
+</div>
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md hover:bg-secondary transition-colors shrink-0 shadow-sm" href="#">
+<span class="material-symbols-outlined text-[18px]">download</span>
+              Unduh Guidebook (PDF)
+            </a>
+</div>
+</div>
+<!-- 2. Tab: Rundown -->
+<div class="tab-pane hidden flex-col gap-4" id="tab-content-rundown">
+<h2 class="font-headline-md text-headline-md text-on-surface">Jadwal Acara &amp; Rundown Pelaksanaan</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-2">Seluruh waktu menggunakan Waktu Indonesia Barat (WIB). Peserta daring diharapkan masuk room 15 menit lebih awal.</p>
+<div class="flex flex-col gap-3">
+<div class="p-4 rounded-xl bg-surface-container-low flex items-start gap-4">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-highest font-label-sm text-label-sm text-on-surface font-semibold shrink-0">08:30 - 09:15</span>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Registrasi Ulang, Check-In Barcode &amp; Welcoming Remarks</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Verifikasi kartu mahasiswa, pembagian exclusive starter kit &amp; opening ceremony BEM Fasilkom.</p>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low flex items-start gap-4">
+<span class="px-2.5 py-1 rounded-lg bg-primary-fixed text-primary font-label-sm text-label-sm font-semibold shrink-0">09:15 - 11:30</span>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Keynote Summit: Scaling Autonomous Intelligence in Southeast Asia</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sesi plenary bersama VP of AI Research &amp; Google Cloud Architect, dilanjutkan sesi interaktif Q&amp;A peserta.</p>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low flex items-start gap-4">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-highest font-label-sm text-label-sm text-on-surface font-semibold shrink-0">11:30 - 13:00</span>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Networking Lunch Break &amp; Tech Exhibition Showcase</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Makan siang bersama, pameran stan UKM riset robotika, dan instalasi showcase partner industri.</p>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low flex items-start gap-4">
+<span class="px-2.5 py-1 rounded-lg bg-primary-fixed text-primary font-label-sm text-label-sm font-semibold shrink-0">13:00 - 16:00</span>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Grand Final Pitching &amp; Live Prototype Demonstration</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">15 Tim hackathon terpilih mempresentasikan prototipe di hadapan dewan juri modal ventura dan pimpinan fakultas.</p>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low flex items-start gap-4">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-highest font-label-sm text-label-sm text-on-surface font-semibold shrink-0">16:00 - 17:00</span>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Awarding Night, Penerbitan E-Sertifikat Instan &amp; Foto Bersama</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pengumuman Juara 1, 2, 3 dan kategori Best Social Impact Solution serta penutupan formal.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. Tab: Syarat & Ketentuan -->
+<div class="tab-pane hidden flex-col gap-4" id="tab-content-syarat">
+<h2 class="font-headline-md text-headline-md text-on-surface">Ketentuan Partisipasi &amp; Kelayakan</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<div class="p-4 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2 text-primary font-title-md text-title-md mb-2">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+                Status Mahasiswa
+              </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Terbuka untuk mahasiswa aktif D3/D4/S1 seluruh perguruan tinggi di Indonesia, dibuktikan dengan KTM atau akun SSO.</p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2 text-primary font-title-md text-title-md mb-2">
+<span class="material-symbols-outlined text-[20px]">groups</span>
+                Komposisi Tim
+              </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Kategori kompetisi hackathon beranggotakan 2 hingga 4 mahasiswa (diperbolehkan kolaborasi lintas fakultas/jurusan).</p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2 text-primary font-title-md text-title-md mb-2">
+<span class="material-symbols-outlined text-[20px]">code</span>
+                Orisinalitas Kode
+              </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Solusi yang diajukan belum pernah menjuarai kompetisi tingkat nasional lain dan tidak melanggar hak cipta pihak ketiga.</p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2 text-primary font-title-md text-title-md mb-2">
+<span class="material-symbols-outlined text-[20px]">how_to_reg</span>
+                Kehadiran &amp; Absensi
+              </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Peserta wajib hadir dan melakukan check-in barcode di lokasi atau scan QR Zoom untuk klaim sertifikat dan poin SKK.</p>
+</div>
+</div>
+</div>
+<!-- 4. Tab: Benefit & E-Sertifikat -->
+<div class="tab-pane hidden flex-col gap-4" id="tab-content-benefit">
+<h2 class="font-headline-md text-headline-md text-on-surface">Benefit Peserta &amp; Validasi Kampus</h2>
+<div class="p-4 rounded-xl bg-primary-fixed/30 flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-[36px]">verified_user</span>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">E-Sertifikat Terverifikasi dengan QR Code Otentikasi</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Setiap sertifikat ditandatangani digital oleh Dekanat dan GDG Indonesia, terhubung langsung ke basis data kampus.</p>
+</div>
+</div>
+<ul class="flex flex-col gap-2 font-body-md text-body-md text-on-surface-variant mt-2">
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[18px]">check</span>
+              Pengakuan 4.0 Satuan Kredit Kegiatan Mahasiswa (SKK / SKPI) terintegrasi ke transkrip.
+            </li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[18px]">check</span>
+              Google Cloud &amp; OpenAI API credits senilai USD $200 untuk seluruh tim yang lolos proposal.
+            </li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[18px]">check</span>
+              Akses rekaman workshop, repositori panduan teknis starter-code &amp; materi presentasi narasumber.
+            </li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[18px]">check</span>
+              Kesempatan fast-track internship di 5 mitra unicorn &amp; startup AI teknologi terkemuka.
+            </li>
+</ul>
+</div>
+<!-- 5. Tab: FAQ -->
+<div class="tab-pane hidden flex-col gap-3" id="tab-content-faq">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">Pertanyaan yang Sering Diajukan (FAQ)</h2>
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<h4 class="font-title-md text-title-md text-on-surface">Apakah pendaftar individu dapat mengikuti hackathon?</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bisa. Peserta yang belum memiliki tim akan dihubungkan melalui Discord server panitia pada kanal khusus matchmaking tim sebelum batas akhir verifikasi.</p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<h4 class="font-title-md text-title-md text-on-surface">Bagaimana jika kuota tiket offline sudah habis?</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Kamu tetap dapat mendaftar tiket Hybrid Zoom secara gratis dengan fasilitas e-sertifikat yang identik dan hak berinteraksi di sesi tanya jawab.</p>
+</div>
+</div>
+</div>
+<!-- Speakers Lineup Showcase -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm p-space-lg">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Narasumber &amp; Dewan Juri</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Praktisi industri dan akademisi terkemuka di bidang rekayasa kecerdasan artifisial.</p>
+</div>
+<span class="hidden sm:inline-flex items-center gap-1 font-label-md text-label-md text-primary">
+<span class="material-symbols-outlined text-[18px]">stars</span>
+            Keynote Curated
+          </span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<!-- Speaker 1 -->
+<div class="flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-sm group">
+<div class="h-44 w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105" data-alt="Portrait photo of an Indonesian female lead AI researcher with glasses, wearing modern business casual attire in a bright creative tech office studio with soft purple and ambient white studio lighting, professional corporate headshot" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDbvQlUTQ25CEtOl7TjhKPt3m_qCJzFkhxJdHBpbDtV3ebMIqXi4M7DBrkMT6DKDie5w1p6bdOeSS0FuNBQsPdWxQwfPmhwsm8CRumF_Y7xwA0S-cTAFzoBJpK3ETxtia-OMI60jBAyCBZS0Ysb_fIB-eYosxxgGSNrd1Hi_vzTIMjXtwvjqjPqVkV31RnooZtVc3aFLzA_GDbB9JUdiiSlfJSXxqQxWwBJ_N9QcSUV')">
+</div>
+<div class="p-3.5 flex flex-col">
+<h4 class="font-title-md text-title-md text-on-surface">Dr. Arina Pradipta</h4>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Head of Research • NeuralGov AI</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2">Pionir pengembangan Large Language Model untuk bahasa daerah nusantara &amp; dosen tamu.</p>
+</div>
+</div>
+<!-- Speaker 2 -->
+<div class="flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-sm group">
+<div class="h-44 w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105" data-alt="Portrait photo of a young Indonesian male technology lead wearing dark blue jacket, modern tech startup background, smiling confidently, ambient clean lighting, professional high resolution profile picture" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBMlQEx8LL1poAEwGnt7cMcAR6ZonYdbSZ-lgo15uzaz2MZuu7SnsgoAF8KFityBcHkmKGAPnfFzqRddBj0GBhblAY6_8Htrt5xAoZazHUhiK4GnXQW3kvfxO2pMDkD-qs_K7SqJ4B2JpsZ-nsiDp-Sw9BNWeSzUQ_O98etTrpK-3jao-s014OaSzixMDB6K_4fXAjqld07VoaDv3pcMIIpR0gJseUro2dlVxba4_K6')">
+</div>
+<div class="p-3.5 flex flex-col">
+<h4 class="font-title-md text-title-md text-on-surface">Bambang Hidayat, M.Sc</h4>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Staff Solutions Architect • Google</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2">Ahli orkestrasi infrastruktur Cloud Kubernetes dan komputasi edge berkinerja tinggi.</p>
+</div>
+</div>
+<!-- Speaker 3 -->
+<div class="flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-sm group">
+<div class="h-44 w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105" data-alt="Portrait headshot of an Indonesian female tech venture capitalist partner in smart blazer in modern conference setting, soft daylight, warm professional expression" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDBFsTrIXAISv7fIo0wqCNta7VsYDupIqnmuuCm36Nk8X0aaiQP_kma76ehglrd_y6Jk5pmBriLhJO7WFhDoUcIjkE0fYGSIqr4CJJ-vMqMYuCLmjttr2lhPFtbuMsuZtaLd4gI1ymojMC-c_dfPymUah3gH_ZtAhSXzGsnhVkuN2UabScifRB7W0s5wcwN03Mf-YstBvoMA0WawpvAjnK_Jn4BQ2iJ0C28opNgfiRc')">
+</div>
+<div class="p-3.5 flex flex-col">
+<h4 class="font-title-md text-title-md text-on-surface">Clarissa Angela</h4>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Partner • Nusantara Seed Ventures</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2">Investor awal bagi puluhan startup AI kampus dan mentor program inkubasi nasional.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Campus Location Map Card -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm p-space-lg flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">location_on</span>
+<h3 class="font-title-md text-title-md text-on-surface">Lokasi Pelaksanaan Acara</h3>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Gedung D Lt. 3 Fasilkom</span>
+</div>
+<div class="w-full h-56 bg-cover bg-center rounded-xl relative overflow-hidden shadow-inner" data-alt="Aerial architectural view of a contemporary university faculty of computer science campus complex with modern glass auditorium hall, lush green campus trees, paved pedestrian paths, sunny afternoon lighting" data-location="Auditorium Utama Fasilkom Kampus Depok" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAV8eJOHLFmVtoIMLGYBjg_1lvOhXaLVPBOwOtUqaustPJZ8_a7zVZAZsFmfJ0EWDM6CHZHNtVFXQBFemFZ0HRMbVJHQ-fJZMwJ4kqtAogn1pg-F5YugS2aMPr4pfLkY3d1eFQ06qn3oJmg0MYYdYZq-GpZ6tuwZATem8mqa4_mFNL_ZF6lyDWYFE9-r_uM2wsEZP6WE9QsoxDQck-SND4oCsFMgpSHtTS-nL5HGPYS')">
+<div class="absolute bottom-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-lg flex items-center gap-2 shadow-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Auditorium Utama &amp; Hybrid Zoom Stream</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Sticky Action & Ticket Registration Card (4 cols) -->
+<div class="lg:col-span-4 sticky top-20 flex flex-col gap-space-md">
+<!-- Primary Action Card -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-md p-space-lg flex flex-col gap-4">
+<!-- Header Info in Action Card -->
+<div class="flex items-start justify-between gap-2 pb-2">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Biaya Pendaftaran</span>
+<div class="flex items-baseline gap-2 mt-0.5">
+<span class="font-headline-md text-headline-md text-primary font-bold">Gratis</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">• Bersertifikat</span>
+</div>
+</div>
+<div class="px-2.5 py-1 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+            Instant Entry
+          </div>
+</div>
+<!-- Quota Progress Section -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between text-on-surface font-label-md text-label-md">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">groups</span>
+              Sisa Kuota Kursi
+            </span>
+<span class="font-semibold text-primary" id="quota-text">342 / 400 Terisi (85%)</span>
+</div>
+<!-- Progress bar -->
+<div class="w-full h-2.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-500" id="quota-bar" style="width: 85.5%;"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="quota-hint">Sisa 58 kursi offline sebelum otomatis dialihkan ke antrean Zoom.</p>
+</div>
+<!-- Deadline Notice Pill -->
+<div class="flex items-center gap-2 p-3 rounded-xl bg-secondary-fixed/40 text-on-secondary-fixed" id="deadline-badge">
+<span class="material-symbols-outlined text-[20px] text-primary">alarm</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold">Tersisa 3 Hari Lagi</span>
+<span class="font-body-sm text-body-sm">Pendaftaran ditutup 28 Okt 2025, 23:59 WIB</span>
+</div>
+</div>
+<!-- Event Logistics Matrix -->
+<div class="flex flex-col gap-2.5 py-1">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-xl bg-surface-container-low flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline">Waktu &amp; Tanggal</span>
+<p class="font-label-md text-label-md text-on-surface">Sabtu, 15 Nov 2025 • 08:30 - 17:00 WIB</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-xl bg-surface-container-low flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">pin_drop</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline">Tempat Pelaksanaan</span>
+<p class="font-label-md text-label-md text-on-surface">Auditorium Utama &amp; Hybrid Zoom</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-xl bg-surface-container-low flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">military_tech</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline">Sertifikasi &amp; SKPI</span>
+<p class="font-label-md text-label-md text-on-surface">Tervalidasi Kemahasiswaan (4 Poin SKK)</p>
+</div>
+</div>
+</div>
+<!-- DYNAMIC REGISTRATION ACTION CONTAINER -->
+<div class="pt-2 flex flex-col gap-2" id="action-container">
+<!-- State 1: Active Register Button (Default) -->
+<button class="w-full py-3.5 px-6 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg hover:bg-secondary transition-all shadow-md flex items-center justify-center gap-2 group" id="btn-register-action" onclick="handleRegistrationSubmit()" type="button">
+<span>Daftar Sekarang (Gratis)</span>
+<span class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+<span class="text-center font-label-sm text-label-sm text-outline" id="action-subtext">Auto-sync dengan akun SSO Kemahasiswaan Anda</span>
+</div>
+<!-- Organizer Micro Info in Card -->
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center justify-between gap-2 mt-1">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold text-label-sm">
+              BF
+            </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">BEM Fasilkom x GDG</span>
+<span class="font-label-sm text-label-sm text-outline">Respon panitia &lt; 2 jam</span>
+</div>
+</div>
+<a class="px-2.5 py-1 rounded-lg bg-surface-container-lowest text-primary font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" href="#">
+            Hubungi
+          </a>
+</div>
+</div>
+<!-- Quick Tips Card -->
+<div class="bg-surface-container-low rounded-2xl p-4 flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0">tips_and_updates</span>
+<div>
+<h5 class="font-title-md text-title-md text-on-surface">Tips Mahasiswa</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Siapkan KTM digital dan portofolio GitHub untuk mempermudah matchmaking tim saat sesi Hackathon.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Tab Switching Logic
+  function switchTab(tabKey) {
+    const panes = document.querySelectorAll('.tab-pane');
+    panes.forEach(pane => pane.classList.add('hidden'));
+
+    const tabButtons = document.querySelectorAll('#detail-tabs .tab-button');
+    tabButtons.forEach(btn => {
+      btn.classList.remove('active-tab', 'bg-primary-container', 'text-on-primary');
+      btn.classList.add('text-on-surface-variant');
+    });
+
+    const activePane = document.getElementById('tab-content-' + tabKey);
+    if (activePane) {
+      activePane.classList.remove('hidden');
+      activePane.classList.add('flex');
+    }
+
+    // Highlight clicked button
+    const eventTarget = window.event ? window.event.currentTarget : null;
+    if (eventTarget) {
+      eventTarget.classList.add('active-tab', 'bg-primary-container', 'text-on-primary');
+      eventTarget.classList.remove('text-on-surface-variant');
+    }
+  }
+
+  // Registration State Interactive Switcher Simulation
+  function setRegistrationState(state) {
+    const actionContainer = document.getElementById('action-container');
+    const deadlineBadge = document.getElementById('deadline-badge');
+    const quotaText = document.getElementById('quota-text');
+    const quotaBar = document.getElementById('quota-bar');
+    const quotaHint = document.getElementById('quota-hint');
+
+    // Update state pill highlight in preview bar
+    document.querySelectorAll('.state-tab').forEach(tab => {
+      tab.classList.remove('bg-primary-container', 'text-on-primary');
+      tab.classList.add('text-on-surface-variant');
+    });
+    const activeTabBtn = document.getElementById('btn-state-' + state);
+    if (activeTabBtn) {
+      activeTabBtn.classList.add('bg-primary-container', 'text-on-primary');
+      activeTabBtn.classList.remove('text-on-surface-variant');
+    }
+
+    if (state === 'active') {
+      quotaText.textContent = '342 / 400 Terisi (85%)';
+      quotaText.className = 'font-semibold text-primary';
+      quotaBar.style.width = '85.5%';
+      quotaBar.className = 'h-full bg-primary rounded-full transition-all duration-500';
+      quotaHint.textContent = 'Sisa 58 kursi offline sebelum otomatis dialihkan ke antrean Zoom.';
+
+      deadlineBadge.className = 'flex items-center gap-2 p-3 rounded-xl bg-secondary-fixed/40 text-on-secondary-fixed';
+      deadlineBadge.innerHTML = `
+        <span class="material-symbols-outlined text-[20px] text-primary">alarm</span>
+        <div class="flex flex-col">
+          <span class="font-label-sm text-label-sm font-bold">Tersisa 3 Hari Lagi</span>
+          <span class="font-body-sm text-body-sm">Pendaftaran ditutup 28 Okt 2025, 23:59 WIB</span>
+        </div>
+      `;
+
+      actionContainer.innerHTML = `
+        <button type="button" id="btn-register-action" onclick="handleRegistrationSubmit()" class="w-full py-3.5 px-6 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg hover:bg-secondary transition-all shadow-md flex items-center justify-center gap-2 group">
+          <span>Daftar Sekarang (Gratis)</span>
+          <span class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+        </button>
+        <span id="action-subtext" class="text-center font-label-sm text-label-sm text-outline">Auto-sync dengan akun SSO Kemahasiswaan Anda</span>
+      `;
+    } 
+    else if (state === 'full') {
+      quotaText.textContent = '400 / 400 Terisi (100% Penuh)';
+      quotaText.className = 'font-semibold text-error';
+      quotaBar.style.width = '100%';
+      quotaBar.className = 'h-full bg-error rounded-full transition-all duration-500';
+      quotaHint.textContent = 'Seluruh kapasitas offline telah terisi penuh oleh peserta terdaftar.';
+
+      deadlineBadge.className = 'flex items-center gap-2 p-3 rounded-xl bg-error-container text-on-error-container';
+      deadlineBadge.innerHTML = `
+        <span class="material-symbols-outlined text-[20px] text-error">cancel</span>
+        <div class="flex flex-col">
+          <span class="font-label-sm text-label-sm font-bold">Kuota Tiket Habis</span>
+          <span class="font-body-sm text-body-sm">Pendaftaran reguler telah mencapai batas maksimum</span>
+        </div>
+      `;
+
+      actionContainer.innerHTML = `
+        <button type="button" disabled class="w-full py-3.5 px-6 rounded-xl bg-surface-container-highest text-outline font-label-lg text-label-lg cursor-not-allowed flex items-center justify-center gap-2">
+          <span class="material-symbols-outlined text-[18px]">lock</span>
+          <span>Kuota Penuh</span>
+        </button>
+        <button type="button" onclick="triggerWaitlistToast()" class="w-full py-2.5 px-4 rounded-xl bg-surface-container-high text-primary font-label-md text-label-md hover:bg-surface-container transition-colors flex items-center justify-center gap-1.5">
+          <span class="material-symbols-outlined text-[16px]">notifications_active</span>
+          Masuk Antrean Waiting List / Zoom
+        </button>
+      `;
+    } 
+    else if (state === 'closed') {
+      quotaText.textContent = 'Registrasi Ditutup';
+      quotaText.className = 'font-semibold text-outline';
+      quotaBar.style.width = '100%';
+      quotaBar.className = 'h-full bg-outline rounded-full transition-all duration-500';
+      quotaHint.textContent = 'Batas waktu pendaftaran resmi telah berakhir pada 28 Okt 2025.';
+
+      deadlineBadge.className = 'flex items-center gap-2 p-3 rounded-xl bg-surface-container-high text-outline';
+      deadlineBadge.innerHTML = `
+        <span class="material-symbols-outlined text-[20px]">event_busy</span>
+        <div class="flex flex-col">
+          <span class="font-label-sm text-label-sm font-bold">Periode Pendaftaran Berakhir</span>
+          <span class="font-body-sm text-body-sm">Pendaftaran telah resmi ditutup oleh panitia</span>
+        </div>
+      `;
+
+      actionContainer.innerHTML = `
+        <button type="button" disabled class="w-full py-3.5 px-6 rounded-xl bg-surface-container-highest text-outline font-label-lg text-label-lg cursor-not-allowed flex items-center justify-center gap-2">
+          <span class="material-symbols-outlined text-[18px]">block</span>
+          <span>Pendaftaran Ditutup</span>
+        </button>
+        <span class="text-center font-label-sm text-label-sm text-outline">Nantikan edisi hackathon berikutnya di semester depan</span>
+      `;
+    } 
+    else if (state === 'registered') {
+      deadlineBadge.className = 'flex items-center gap-2 p-3 rounded-xl bg-surface-container text-primary';
+      deadlineBadge.innerHTML = `
+        <span class="material-symbols-outlined text-[20px]">check_circle</span>
+        <div class="flex flex-col">
+          <span class="font-label-sm text-label-sm font-bold">Status Anda: Peserta Terkonfirmasi</span>
+          <span class="font-body-sm text-body-sm">Nomor Registrasi: #EK-99214 (Kategori Offline)</span>
+        </div>
+      `;
+
+      actionContainer.innerHTML = `
+        <div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-3">
+          <div class="flex items-center justify-between">
+            <span class="font-label-sm text-label-sm text-outline">E-Tiket &amp; Barcode Check-In</span>
+            <span class="px-2 py-0.5 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm font-bold">READY</span>
+          </div>
+          <!-- Clean Inline Ticket Preview with QR -->
+          <div class="flex items-center gap-3 p-3 bg-surface-container-lowest rounded-xl shadow-sm">
+            <div class="w-16 h-16 bg-surface-container-high rounded-lg flex items-center justify-center text-on-surface">
+              <span class="material-symbols-outlined text-[36px]">qr_code_2</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-label-sm text-label-sm text-primary font-semibold">TICKET ID: #EK-99214</span>
+              <span class="font-title-md text-title-md text-on-surface font-bold">Mahasiswa Utama</span>
+              <span class="font-label-sm text-label-sm text-on-surface-variant">Gate A • Seat #42</span>
+            </div>
+          </div>
+          <button type="button" class="w-full py-3 px-4 rounded-xl bg-primary text-on-primary font-label-md text-label-md hover:bg-secondary transition-all flex items-center justify-center gap-2 shadow-sm">
+            <span class="material-symbols-outlined text-[18px]">confirmation_number</span>
+            <span>Buka &amp; Unduh E-Tiket Saya</span>
+          </button>
+        </div>
+      `;
+    }
+  }
+
+  // Toast interactions
+  function showToast() {
+    const toast = document.getElementById('registration-toast');
+    toast.classList.remove('translate-y-[-120%]', 'opacity-0', 'pointer-events-none');
+    toast.classList.add('translate-y-0', 'opacity-100');
+    setTimeout(() => {
+      dismissToast();
+    }, 4500);
+  }
+
+  function dismissToast() {
+    const toast = document.getElementById('registration-toast');
+    toast.classList.remove('translate-y-0', 'opacity-100');
+    toast.classList.add('translate-y-[-120%]', 'opacity-0', 'pointer-events-none');
+  }
+
+  function handleRegistrationSubmit() {
+    showToast();
+    setRegistrationState('registered');
+  }
+
+  function triggerWaitlistToast() {
+    const toast = document.getElementById('registration-toast');
+    toast.querySelector('h4').textContent = 'Dimasukkan ke Waiting List';
+    toast.querySelector('p').textContent = 'Anda akan menerima notifikasi otomatis jika kuota offline bertambah.';
+    showToast();
+  }
+</script></main><footer class="w-full bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] mt-space-xl"><div class="max-w-7xl mx-auto px-margin py-space-xl"><div class="flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-3"><img alt="EVENT.KITA Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrA5dgWpmXlUweALvYdAQvjg6CPGyT6yBk6gMBMlXa8XPRN7MadhfAmS2DNT7bNIjvUC8CvGy4rfffl6E7zf4eQwZBriovYKqSv9ehOmngFrx9BwqSlX8MyUEhFSlH3eq4S9_IyfTn91RqZFjYjxZ6G4R0faEC-yVUnAm8V4AEbhoUzLJflqt4HvWKPU1gK_45sjPYOrW6ZXBKgAoIzyqftBgTIaaftyBPPeeJrG9YHiXQ"/><span class="font-title-md text-title-md text-on-surface">EVENT.KITA Campus Ecosystem</span></div><div class="flex flex-wrap items-center gap-space-lg text-on-surface-variant font-body-sm text-body-sm"><a class="hover:text-primary transition-colors" href="#">Panduan Mahasiswa</a><a class="hover:text-primary transition-colors" href="#">Kemitraan UKM</a><a class="hover:text-primary transition-colors" href="#">Pusat Bantuan</a><a class="hover:text-primary transition-colors" href="#">Privasi</a></div></div><div class="mt-space-lg pt-space-md text-center text-outline font-label-sm text-label-sm">© 2024 EVENT.KITA. Integrated Campus Event &amp; Ticketing Management Platform.</div></div></footer></body></html>

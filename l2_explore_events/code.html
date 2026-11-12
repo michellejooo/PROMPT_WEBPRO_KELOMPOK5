@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>EVENT.KITA - Mahasiswa Portal</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-lowest":"#ffffff","surface-container":"#e5eeff","on-surface":"#0b1c30","on-primary-fixed-variant":"#4d17c5","surface-container-highest":"#d3e4fe","background":"#f8f9ff","surface-container-high":"#dce9ff","on-secondary-container":"#2f088f","on-secondary-fixed-variant":"#482fa7","surface-variant":"#d3e4fe","primary-container":"#7048e8","on-tertiary-fixed":"#00164e","secondary-fixed":"#e6deff","on-secondary-fixed":"#1c0062","tertiary-fixed":"#dce1ff","on-tertiary":"#ffffff","secondary-container":"#9984fd","on-tertiary-fixed-variant":"#003baf","inverse-surface":"#213145","surface-dim":"#cbdbf5","tertiary-container":"#365fd7","outline":"#7a7486","on-error":"#ffffff","outline-variant":"#cac3d7","surface-tint":"#663cdd","tertiary":"#0f45be","primary-fixed-dim":"#ccbdff","error-container":"#ffdad6","error":"#ba1a1a","on-secondary":"#ffffff","inverse-primary":"#ccbdff","on-primary":"#ffffff","on-primary-container":"#ede4ff","on-primary-fixed":"#1f005f","secondary":"#604ac1","inverse-on-surface":"#eaf1ff","surface-bright":"#f8f9ff","on-error-container":"#93000a","primary":"#5728cf","on-surface-variant":"#494455","primary-fixed":"#e7deff","secondary-fixed-dim":"#cabeff","on-background":"#0b1c30","tertiary-fixed-dim":"#b6c4ff","surface":"#f8f9ff","on-tertiary-container":"#e4e7ff","surface-container-low":"#eff4ff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-mobile":"1rem","space-xs":"0.25rem","gutter-mobile":"1rem","space-xl":"2.5rem","space-lg":"1.5rem","space-md":"1rem","space-sm":"0.5rem","gutter":"1.5rem","margin":"2rem"},"fontFamily":{"headline-lg":["Plus Jakarta Sans"],"label-md":["Inter"],"body-md":["Inter"],"headline-md":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"label-sm":["Inter"],"title-md":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-display":["Plus Jakarta Sans"],"label-lg":["Inter"],"body-lg":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-display-mobile":["Plus Jakarta Sans"]},"fontSize":{"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","fontWeight":"500"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"headline-display":["44px",{"lineHeight":"52px","fontWeight":"800"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"26px","fontWeight":"400"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","fontWeight":"700"}],"headline-display-mobile":["32px",{"lineHeight":"40px","fontWeight":"800"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-7xl mx-auto px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-2" data-path="explore" href="#"><img alt="EVENT.KITA Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrA5dgWpmXlUweALvYdAQvjg6CPGyT6yBk6gMBMlXa8XPRN7MadhfAmS2DNT7bNIjvUC8CvGy4rfffl6E7zf4eQwZBriovYKqSv9ehOmngFrx9BwqSlX8MyUEhFSlH3eq4S9_IyfTn91RqZFjYjxZ6G4R0faEC-yVUnAm8V4AEbhoUzLJflqt4HvWKPU1gK_45sjPYOrW6ZXBKgAoIzyqftBgTIaaftyBPPeeJrG9YHiXQ"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">EVENT.KITA</span></a><span class="px-2 py-0.5 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm">Mahasiswa</span></div><nav class="hidden md:flex items-center gap-2 bg-surface-container-low p-1 rounded-xl" data-active-classes="bg-primary-container text-on-primary font-label-md rounded-xl shadow-[0_4px_16px_-2px_rgba(73,48,168,0.15)]"><a aria-current="page" class="px-4 py-2 transition-colors bg-primary-container text-on-primary font-label-md rounded-xl shadow-[0_4px_16px_-2px_rgba(73,48,168,0.15)]" data-path="explore" href="#">Explore</a><a class="px-4 py-2 rounded-xl text-on-surface-variant font-label-md text-label-md transition-colors hover:text-on-surface" data-path="calendar" href="#">Calendar</a><a class="px-4 py-2 rounded-xl text-on-surface-variant font-label-md text-label-md transition-colors hover:text-on-surface" data-path="my-events" href="#">My Events</a><a class="px-4 py-2 rounded-xl text-on-surface-variant font-label-md text-label-md transition-colors hover:text-on-surface" data-path="documentation" href="#">Documentation</a></nav><div class="flex items-center gap-space-sm"><div class="relative hidden sm:block w-48 lg:w-64"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full h-10 pl-9 pr-3 rounded-xl bg-surface-container-lowest text-on-surface text-body-sm font-body-sm placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Search events, clubs..." type="text"/></div><button aria-label="Notifications" class="w-10 h-10 rounded-xl flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors relative" type="button"><span class="material-symbols-outlined">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-error"></span></button><a class="flex items-center gap-2 pl-2" data-path="my-events" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUFGcQXEGjtzNhXQPaGIDGs5e5P8eg_k8c9miHgIlj5R8vwTGyMeVKUWKkf65xF-0jgdEVBTLXc7UJRoUqYfl7WF6tdKKYD2R1If6CISvQehq-8FiPYj-Ss2LCz5xngaT1-IVekgz96C3AUGNifJQk5CB6NEwQXeWkIhKtLMgwcTGiKKp1p0fTnKASLu3AnvGdeInhZMw0m0LKbVF0v7yDM8fODppCat6HHtgAVr8v"/></a></div></div></header><main class="w-full pt-16 bg-background max-w-7xl mx-auto px-margin min-h-screen"><div class="flex flex-col w-full pb-space-xl">
+<!-- Dynamic Ambient Hero Banner (bleeds smoothly under header clearance) -->
+<section class="relative w-full rounded-2xl overflow-hidden bg-gradient-to-br from-primary via-primary-container to-secondary p-8 sm:p-12 mb-space-xl shadow-xl text-on-primary">
+<!-- Abstract Ambient Glow Orbs -->
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-secondary-container/25 blur-3xl pointer-events-none"></div>
+<div class="absolute left-1/3 -bottom-20 w-96 h-96 rounded-full bg-tertiary-container/30 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 max-w-3xl flex flex-col gap-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-lowest/15 backdrop-blur-md w-fit">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-surface-bright uppercase tracking-wider">Campus Life &amp; Opportunities</span>
+</div>
+<div class="flex flex-col gap-1">
+<p class="font-title-md text-title-md text-primary-fixed opacity-95">Temukan Acara Kampus Terbaik</p>
+<h1 class="font-headline-display text-headline-display tracking-tight text-surface-bright">Discover. Join. Experience.</h1>
+</div>
+<p class="font-body-md text-body-md text-surface-container-highest max-w-xl">
+        Akses ratusan workshop bersertifikat, hackathon kompetitif, dan konser seni mahasiswa terkurasi resmi oleh BEM, Himpunan, dan UKM.
+      </p>
+<!-- Integrated Hero Search Input -->
+<div class="mt-4 flex flex-col sm:flex-row items-center gap-2 bg-surface-container-lowest p-2 rounded-2xl shadow-lg w-full max-w-2xl">
+<div class="flex items-center gap-3 px-3 flex-1 w-full">
+<span class="material-symbols-outlined text-outline">search</span>
+<input class="w-full bg-transparent text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none" id="hero-search-input" placeholder="Cari hackathon, workshop AI, konser kampus..." type="text"/>
+</div>
+<button class="w-full sm:w-auto px-6 py-3 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg transition-transform hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-2" id="search-cta-btn">
+<span>Eksplor</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Quick Category Pill Tags -->
+<div class="mt-3 flex flex-wrap items-center gap-2">
+<span class="font-label-sm text-label-sm text-surface-container-high mr-1">Trending:</span>
+<button class="filter-pill active px-3.5 py-1.5 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm transition-all hover:bg-surface-container-lowest shadow-sm" data-category="Semua">Semua</button>
+<button class="filter-pill px-3.5 py-1.5 rounded-full bg-surface-container-lowest/15 backdrop-blur-md text-surface-bright font-label-sm text-label-sm transition-all hover:bg-surface-container-lowest/30" data-category="Seminar &amp; Workshop">Seminar &amp; Workshop</button>
+<button class="filter-pill px-3.5 py-1.5 rounded-full bg-surface-container-lowest/15 backdrop-blur-md text-surface-bright font-label-sm text-label-sm transition-all hover:bg-surface-container-lowest/30" data-category="Kompetisi">Kompetisi</button>
+<button class="filter-pill px-3.5 py-1.5 rounded-full bg-surface-container-lowest/15 backdrop-blur-md text-surface-bright font-label-sm text-label-sm transition-all hover:bg-surface-container-lowest/30" data-category="Konser &amp; Seni">Konser &amp; Seni</button>
+<button class="filter-pill px-3.5 py-1.5 rounded-full bg-surface-container-lowest/15 backdrop-blur-md text-surface-bright font-label-sm text-label-sm transition-all hover:bg-surface-container-lowest/30" data-category="Webinar Tech">Webinar Tech</button>
+<button class="filter-pill px-3.5 py-1.5 rounded-full bg-surface-container-lowest/15 backdrop-blur-md text-surface-bright font-label-sm text-label-sm transition-all hover:bg-surface-container-lowest/30" data-category="Bakti Sosial">Bakti Sosial</button>
+</div>
+</div>
+</section>
+<!-- Control & Filter Bar -->
+<section class="flex flex-col gap-4 mb-space-lg">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4 bg-surface-container-lowest p-4 rounded-2xl shadow-sm">
+<!-- Primary Controls -->
+<div class="flex flex-wrap items-center gap-3 flex-1">
+<!-- Category Dropdown -->
+<div class="relative min-w-[170px]">
+<select class="w-full appearance-none bg-surface-container-low text-on-surface font-body-sm text-body-sm pl-4 pr-10 py-2.5 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 cursor-pointer" id="select-category">
+<option value="all">Kategori: Semua</option>
+<option value="Seminar Tech">Seminar &amp; Tech</option>
+<option value="Kompetisi">Kompetisi &amp; Hackathon</option>
+<option value="Seni Budaya">Konser &amp; Seni</option>
+<option value="Sosial">Bakti Sosial &amp; Volunteer</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+<!-- Date Filter Pills -->
+<div class="flex items-center p-1 bg-surface-container-low rounded-xl">
+<button class="date-filter px-3 py-1.5 rounded-lg text-primary font-label-md text-label-md bg-surface-container-lowest shadow-xs transition-all" data-date="all">Semua Waktu</button>
+<button class="date-filter px-3 py-1.5 rounded-lg text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-all" data-date="week">Minggu Ini</button>
+<button class="date-filter px-3 py-1.5 rounded-lg text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-all" data-date="month">Bulan Ini</button>
+</div>
+<!-- Event Status Filter -->
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-container-low text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+<label class="font-label-sm text-label-sm flex items-center gap-2 cursor-pointer select-none">
+<input class="rounded accent-primary w-4 h-4 cursor-pointer" id="filter-open-only" type="checkbox"/>
+<span>Hanya Buka Pendaftaran</span>
+</label>
+</div>
+</div>
+<!-- Right Actions: Sorting & State Toggle Switch -->
+<div class="flex items-center justify-between lg:justify-end gap-3">
+<!-- Sort By -->
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-outline hidden sm:inline">Urutkan:</span>
+<div class="relative">
+<select class="appearance-none bg-surface-container-low text-on-surface font-body-sm text-body-sm pl-3 pr-8 py-2.5 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 cursor-pointer" id="select-sort">
+<option value="popular">Terpopuler</option>
+<option value="nearest">Terdekat</option>
+<option value="newest">Terbaru</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">sort</span>
+</div>
+</div>
+<!-- Interactive Search Demo Toggle Button -->
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-surface-container-high text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" id="toggle-state-btn" title="Pratinjau tampilan ketika pencarian tidak menemukan hasil">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span id="toggle-state-label">Simulasi Kosong</span>
+</button>
+</div>
+</div>
+<!-- Active Stats Tracker Strip -->
+<div class="flex items-center justify-between px-2 text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">event_available</span>
+<span>Menampilkan <strong class="text-on-surface font-label-md text-label-md" id="event-count">6</strong> event aktif kampus</span>
+</div>
+<div class="hidden sm:flex items-center gap-4 text-outline font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary-container"></span> Tersedia Sertifikat SKPI</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-tertiary-container"></span> Terverifikasi BEM/Fakultas</span>
+</div>
+</div>
+</section>
+<!-- Main Event Grid Section -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="event-grid-container">
+<!-- Card 1: Hackathon (Featured) -->
+<article class="event-card group flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 relative" data-category="Kompetisi" data-open="true" data-title="national ai hackathon 2025">
+<!-- Ribbon -->
+<div class="absolute top-3 left-3 z-20 flex items-center gap-1 px-3 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-md">
+<span class="material-symbols-outlined text-[14px]">local_fire_department</span>
+<span>Featured</span>
+</div>
+<!-- Poster Image Container -->
+<div class="relative w-full aspect-[16/9] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Digital illustration of a high energy collegiate hackathon with energetic university students collaborating over code and glowing artificial intelligence neural network holographic diagrams, vibrant purple and deep indigo neon lighting, sharp tech aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_kYzFC-oT2UBNgckTB1XPFvpTpI44VJ-k0JLqqF2MqLxfNrdrLZnLMDED__Vua1dl-WQfT9mu4PHGdrKb6X4b0iESVhgmleD7iZtitoI_WwsyrsqkLOAoWgDK-fJDN5hgxV3RruGnGQc4-lw9SfYRT5Qq02eAAAp8mRUtHEhXq2HDxCUI1qE1T9-uxc07cxxwdVmAsMcQYE0lWvt0Enm8M4IphSmvTLEW0H8ntt-R"/>
+<div class="absolute bottom-2.5 right-2.5 px-2.5 py-1 rounded-lg bg-inverse-surface/85 backdrop-blur-md text-inverse-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed">schedule</span>
+<span>Sisa 4 Hari</span>
+</div>
+</div>
+<!-- Content Body -->
+<div class="p-5 flex flex-col flex-1 justify-between gap-4">
+<div class="flex flex-col gap-2">
+<!-- Category & Status -->
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm">Kompetisi Nasional</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Gratis</span>
+</div>
+<!-- Title -->
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+            National AI Hackathon 2025
+          </h2>
+<!-- Event Meta Details -->
+<div class="flex flex-col gap-1.5 text-on-surface-variant font-body-sm text-body-sm mt-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline">calendar_month</span>
+<span>18 - 20 Okt 2025 • 08:00 WIB</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+<span class="truncate">Auditorium Gedung Riset &amp; Hybrid Zoom</span>
+</div>
+</div>
+</div>
+<!-- Card Footer: Organizer & Action -->
+<div class="pt-3 flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<img class="w-7 h-7 rounded-full object-cover bg-surface-container" data-alt="Modern geometric avatar icon representing UKM Computer Science Club, minimalist purple shield emblem on clean light surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAS1x-WC7l3j4dNVlYpKnDn2qM04wuF9Zj5f4L3q_TZCCx3-6CsspxR58XrNxmfSNE1T5XddslK_7FGbfzo8WZyGaXIwrqAx69Bw3MxmCeiQf6xlOOf2gLl_kMEkomqCWVWzd_5i3GQVvLAzzhVDjRiVd-mE8E53QMfRf19Npw7rR3_RmbIIHt7Iv5tQK5hrVV0s1n01oaPf0wmPrTRYHaSznPTTaIUjFcfnhbfkFbb"/>
+<span class="font-label-sm text-label-sm text-on-surface truncate">BEM Fasilkom</span>
+</div>
+<button class="px-4 py-2 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md transition-all hover:bg-on-secondary-container hover:shadow-md flex items-center gap-1 active:scale-95">
+<span>Lihat Detail</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 2: Design Masterclass -->
+<article class="event-card group flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 relative" data-category="Seminar Tech" data-open="true" data-title="ui/ux design masterclass">
+<div class="relative w-full aspect-[16/9] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Aesthetic workspace banner depicting modern UI UX design workflow with wireframes, mobile app interfaces on sleek monitors, dynamic soft violet and slate ambient lighting, professional design masterclass studio setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUo7oxVxECEzIpQjx9I9RDi3A3UTVR0POPD4xkyk8cVIg28XfBNdDg3A_opuAXEcDWKp_kqAGKExIOs14bCP6iY4hULl9YhYEd60kOdlan75wPLgAUJVdPaD9IyBDBAx7R4KHss0nvGhPS-dWsVOZY7ZzOMvRfnCg0evfQIi42m2v3GTXRvdKJgV4sAwjTv6iTtjT8yvzrXfmAWBxIZACXf7IPMj5jnvS6dDQ1gbkf"/>
+<div class="absolute bottom-2.5 right-2.5 px-2.5 py-1 rounded-lg bg-inverse-surface/85 backdrop-blur-md text-inverse-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed">videocam</span>
+<span>Online / Live</span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between gap-4">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm">Seminar Tech</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Rp 25.000</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+            UI/UX Design Masterclass
+          </h2>
+<div class="flex flex-col gap-1.5 text-on-surface-variant font-body-sm text-body-sm mt-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline">calendar_month</span>
+<span>24 Okt 2025 • 13:30 WIB</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline">laptop_mac</span>
+<span class="truncate">Live Webinar via Zoom Meeting</span>
+</div>
+</div>
+</div>
+<div class="pt-3 flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<img class="w-7 h-7 rounded-full object-cover bg-surface-container" data-alt="Creative student designer guild logo circular badge with purple pastel gradient background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAV8hy2PzxU2c3S8csahyrvirH6wFO0cK5b-UD1yth9IbbhNiuXrHf8l3gyQtbOcZkr98o_aPWM2lOGJswD5ZdgPQp4-KbzW9QUjdZ4H25aDqkEkLuhIyT55sa_fvYf3dq3t0esJF-K8eJiNQg3sl4rIUDMIhsCfwRj7p9FvKX6iWAibkTG6a3HxJn1KIkVApPTbpFXRHDSfdoEX_2UrcPUYl9cVLy3YD63SdqYt991"/>
+<span class="font-label-sm text-label-sm text-on-surface truncate">UKM Multimedia &amp; Desain</span>
+</div>
+<button class="px-4 py-2 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md transition-all hover:bg-on-secondary-container hover:shadow-md flex items-center gap-1 active:scale-95">
+<span>Lihat Detail</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 3: Cultural Festival -->
+<article class="event-card group flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 relative" data-category="Seni Budaya" data-open="true" data-title="festival budaya nusantara">
+<div class="relative w-full aspect-[16/9] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Vibrant campus traditional cultural performance with Indonesian dancers in ornate colorful attire on stage with majestic purple and golden stage spotlights, high energy youth festival atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmjkqbqTaanbVgblh3ajjOkqMA_fKrHgkqRwRH1l_8yNO2D_4-eVMFJICAnoLiUPfUCUkhQa5xJ_Js8aEb00Nh54xgLozGgXfbuGIE9ZjdUUsCeu6tiJa7KH-B3v5LbY3H1Q-xrF_-2Y2XIcMNzR5L8eMEySn4qJw5dXH_w-1VoHP4y4SeIX_1g_-xLeiem_oJ-PcCYNVArTTx4hs92KGc6bh-T4YyawOnEllzjBGq"/>
+<div class="absolute bottom-2.5 right-2.5 px-2.5 py-1 rounded-lg bg-inverse-surface/85 backdrop-blur-md text-inverse-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed">confirmation_number</span>
+<span>Open Public</span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between gap-4">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-secondary-container font-label-sm text-label-sm">Konser &amp; Seni</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Gratis</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+            Festival Budaya Nusantara
+          </h2>
+<div class="flex flex-col gap-1.5 text-on-surface-variant font-body-sm text-body-sm mt-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline">calendar_month</span>
+<span>28 Okt 2025 • 16:00 WIB</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline">stadium</span>
+<span class="truncate">Lapangan Rektorat Utama</span>
+</div>
+</div>
+</div>
+<div class="pt-3 flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<img class="w-7 h-7 rounded-full object-cover bg-surface-container" data-alt="Traditional dance student community logo emblem in deep magenta and purple." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmZ9P6ube940IfRoZngQDW1Vz3CMPuaa2XNSfyDvyaKnnWG2oLU07cFmIroZ1yZZL6HTr65Fm6xmnxK8PYODwDDcO_0UlPLJ-lIJGBw_1B8XT0sBKh7SY0Hw8TS9ahcp_tvN4bLGCiBzIqJOef9h8JeG1HuoIZAnzhbhJ4sw0AF9v9DGAkY2sEZDpcBDcZFVtEfyUKoS0rxEsteBuz00nKKXkDlpOm1su2GUyQr2St"/>
+<span class="font-label-sm text-label-sm text-on-surface truncate">UKM Seni Tradisional</span>
+</div>
+<button class="px-4 py-2 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md transition-all hover:bg-on-secondary-container hover:shadow-md flex items-center gap-1 active:scale-95">
+<span>Lihat Detail</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 4: Music Fest (Featured) -->
+<article class="event-card group flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 relative" data-category="Seni Budaya" data-open="true" data-title="grand annual music fest">
+<div class="absolute top-3 left-3 z-20 flex items-center gap-1 px-3 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-md">
+<span class="material-symbols-outlined text-[14px]">star</span>
+<span>Popular</span>
+</div>
+<div class="relative w-full aspect-[16/9] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Electrifying live college music concert festival stage at night with sea of energetic student crowd raising their hands, deep purple beams, laser light show, indie rock campus band playing on stage." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGkPoqP8aoIxprVIx805U_FT3xTU6ql-3KLjJKJ2Uy_FurZt6GwqzUxN0DddvqJCrXTGNrHim1CyUJ0XcsoYD03WvKQSzhiNQOiu4UbP_aADV6aqwV0VmNXzAlkWRPNAn2w-wMUUSsuTD_ZOp92bzTdEJ3m3FIDZaNFZZHcBVsEJKC5-I5TD12822Z2HbBnrL_L68744Rg-1l7m0vaDEqn0IAb6dZnafXQmqIcqdZg"/>
+<div class="absolute bottom-2.5 right-2.5 px-2.5 py-1 rounded-lg bg-inverse-surface/85 backdrop-blur-md text-inverse-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed">group</span>
+<span>950+ Peserta</span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between gap-4">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-secondary-container font-label-sm text-label-sm">Konser &amp; Seni</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Rp 35.000</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+            Grand Annual Music Fest
+          </h2>
+<div class="flex flex-col gap-1.5 text-on-surface-variant font-body-sm text-body-sm mt-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline">calendar_month</span>
+<span>05 Nov 2025 • 18:30 WIB</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline">festival</span>
+<span class="truncate">Auditorium Terbuka Kampus 1</span>
+</div>
+</div>
+</div>
+<div class="pt-3 flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<img class="w-7 h-7 rounded-full object-cover bg-surface-container" data-alt="Sound and music student organization badge with purple acoustic waveform insignia." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4cVbh8aJlMTx-M5p4Y8O_z3GOwc_aLp2FTS9A1nky7wqAttOAKQwTAY-LjdNY_8e7uKzXsCKXbfOVb_9a8tbbntk7rNmITaqW-r_9UTJaZY7-u6dmer4L6C6m1GIjdMfGY3hrobqukCg6eZHetXuCzh8EDO0vvYdDgtJEzDxmypVqqfxH-xsXkRYBrSW3D2Xt5eYtYUzuNhVnftILgFs0-4lbWdROvn7KghjHuzzu"/>
+<span class="font-label-sm text-label-sm text-on-surface truncate">BEM Universitas</span>
+</div>
+<button class="px-4 py-2 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md transition-all hover:bg-on-secondary-container hover:shadow-md flex items-center gap-1 active:scale-95">
+<span>Lihat Detail</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 5: Cloud & DevOps Workshop -->
+<article class="event-card group flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 relative" data-category="Seminar Tech" data-open="true" data-title="cloud architecture seminar workshop">
+<div class="relative w-full aspect-[16/9] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Professional tech seminar presentation hall with university students in modern auditorium focusing on wide screen displaying cloud computing server diagrams and Kubernetes clusters, ambient violet lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsAbv94jIEglT7Z3z_FzwFPF57s1uu2xVU9r4Xyv0vp3fsH6KmRxYRABe-5b9OgxOVpRFFUz6mPGZMDhy3laBByCfW3cmPtIVjYwn1lWrenw0ObjkcATqXONiYSheaH9LR8UiUSo1Mp1mWlshPbUitft2VWc1EJ4qvGr7Vg1YXdhS0j8eSmq0vTsJ8Srg-8Z0Z5zQp3JZReVojSfn7Ov9E2LEAg-RewFq2uqF_xdYa"/>
+<div class="absolute bottom-2.5 right-2.5 px-2.5 py-1 rounded-lg bg-inverse-surface/85 backdrop-blur-md text-inverse-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed">card_membership</span>
+<span>SKPI + E-Sertifikat</span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between gap-4">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm">Webinar Tech</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Gratis</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+            Cloud Architecture Workshop
+          </h2>
+<div class="flex flex-col gap-1.5 text-on-surface-variant font-body-sm text-body-sm mt-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline">calendar_month</span>
+<span>12 Nov 2025 • 09:00 WIB</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+<span class="truncate">Lab Komputer Gedung C Lantai 4</span>
+</div>
+</div>
+</div>
+<div class="pt-3 flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<img class="w-7 h-7 rounded-full object-cover bg-surface-container" data-alt="Cloud technology student club emblem with clean purple and white lines." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFdjFtArRoa_N9fdAWEf9orhHN2FipJ9X2dKX96HV5U4XYn__DWXYWV0IxaPxJSpVa5WNGRbcdQrxVHdJuZ4RJuO74SGyCCq7IgVlhlQn8XzB03au8Iy2CxVrZQ6mEQIxX9F5I7Ipm75T1ymSLqdDu2VWFaJuQdHsRdaEmC3a5wrzqb1C_fRoINr1DoNC407g5DrFaSx4HVpZar2AVsqdxd2fVzJyKREkO0n6xEkym"/>
+<span class="font-label-sm text-label-sm text-on-surface truncate">Himpunan Teknik Informatika</span>
+</div>
+<button class="px-4 py-2 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md transition-all hover:bg-on-secondary-container hover:shadow-md flex items-center gap-1 active:scale-95">
+<span>Lihat Detail</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 6: Bakti Sosial Kampus Peduli -->
+<article class="event-card group flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 relative" data-category="Sosial" data-open="true" data-title="bakti sosial pengabdian desa binaan">
+<div class="relative w-full aspect-[16/9] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Heartwarming scene of college student volunteers conducting literacy workshops and planting trees with village children in suburban community, warm sunshine, genuine smiles, inspiring campus community social service activity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRtAhVJ1QZYy5T-WMiFQHPY7xUqnSwHlSV1hX2H9M489Pa7tKOagW5cjbp9csgIEhyN8AJxS8bv6-ffzoaGwUgb35SRjMWPcSo_T9xV-VNx1HkcSH3XV56V-Tv7PPLZXiLMTCKOMnsQyDYdAJjNKQSW9Yqv2PxM6ud6TUELlC4zkaw8uGc5sNfKV0niV9Pl79ZURcNG_qZzsAVIKv56yW5i5X7U-RxATEHgdfD1kBd"/>
+<div class="absolute bottom-2.5 right-2.5 px-2.5 py-1 rounded-lg bg-inverse-surface/85 backdrop-blur-md text-inverse-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed">volunteer_activism</span>
+<span>Relawan</span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between gap-4">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm">Bakti Sosial</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Gratis</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+            Bakti Sosial &amp; Edukasi Desa
+          </h2>
+<div class="flex flex-col gap-1.5 text-on-surface-variant font-body-sm text-body-sm mt-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline">calendar_month</span>
+<span>17 Nov 2025 • 07:00 WIB</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline">pin_drop</span>
+<span class="truncate">Desa Binaan Cikarang (Titik Kumpul Lobi Utama)</span>
+</div>
+</div>
+</div>
+<div class="pt-3 flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<img class="w-7 h-7 rounded-full object-cover bg-surface-container" data-alt="Student volunteer club logo icon with hands holding a leaf in soft violet tone." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8KjfQfIInDBy7J5u2VNLnI35t9Vu42d9uR4Hb40BMgJfC0X_IngNe5oZdsoqUsBmc7ubiDFcqPIgx7Zsr2AUpbKa-DA9EECuWaoY9ARoxlomhK-1uuWAuL5oICP0RE12Cf8TTDPxc7ISEPJcUqlGCkpdHOQ9FPzjbzwPgRT0bzaFTD5dbzhLFZQCWuUpVI47JEZnv6wkBfaAx0qGHtJkKaLfnyWeV4SRw5aTKHEa8"/>
+<span class="font-label-sm text-label-sm text-on-surface truncate">KSR &amp; Divisi Pengabdian</span>
+</div>
+<button class="px-4 py-2 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md transition-all hover:bg-on-secondary-container hover:shadow-md flex items-center gap-1 active:scale-95">
+<span>Lihat Detail</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</article>
+</section>
+<!-- Empty State (Hidden by default, triggered by toggle or invalid search) -->
+<section class="hidden flex flex-col items-center justify-center p-12 text-center bg-surface-container-lowest rounded-2xl shadow-sm my-4" id="empty-state-view">
+<!-- Friendly Inline Themed Illustration -->
+<div class="relative w-36 h-36 mb-6 flex items-center justify-center">
+<div class="absolute inset-0 rounded-full bg-secondary-fixed/50 animate-ping opacity-25"></div>
+<div class="w-28 h-28 rounded-full bg-surface-container-low flex items-center justify-center text-primary shadow-inner">
+<svg class="w-14 h-14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewbox="0 0 24 24">
+<circle cx="11" cy="11" r="8"></circle>
+<line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+<line x1="8" x2="14" y1="11" y2="11"></line>
+</svg>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Event tidak ditemukan</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mb-6">
+      Tidak ada agenda kampus yang cocok dengan kata kunci atau filter yang Anda pilih. Coba sesuaikan filter pencarian Anda.
+    </p>
+<!-- Helpful Search Recovery Suggestions -->
+<div class="bg-surface-container-low p-4 rounded-xl max-w-md w-full text-left mb-6">
+<p class="font-label-md text-label-md text-on-surface mb-2">Tips Pencarian:</p>
+<ul class="flex flex-col gap-1.5 font-body-sm text-body-sm text-on-surface-variant list-disc list-inside">
+<li>Periksa kembali penulisan ejaan nama acara</li>
+<li>Gunakan kata kunci lebih umum seperti <span class="text-primary font-medium">"Workshop"</span> atau <span class="text-primary font-medium">"Hackathon"</span></li>
+<li>Gunakan tombol reset untuk mengembalikan seluruh kategori</li>
+</ul>
+</div>
+<button class="px-6 py-2.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md transition-all hover:bg-on-secondary-container hover:shadow-md flex items-center gap-2" id="reset-search-btn">
+<span class="material-symbols-outlined text-[18px]">restart_alt</span>
+<span>Reset Pencarian &amp; Filter</span>
+</button>
+</section>
+<!-- Interactive Pagination Navigation -->
+<section class="mt-space-xl flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t-0 bg-surface-container-lowest p-4 rounded-2xl shadow-sm" id="pagination-wrapper">
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+      Halaman <strong class="text-on-surface font-label-md text-label-md">1</strong> dari <strong class="text-on-surface font-label-md text-label-md">4</strong> • Total 24 Event
+    </div>
+<div class="flex items-center gap-1">
+<button aria-label="Previous Page" class="w-9 h-9 rounded-xl flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors disabled:opacity-30" disabled="">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<button class="w-9 h-9 rounded-xl flex items-center justify-center bg-primary text-on-primary font-label-md text-label-md shadow-xs">1</button>
+<button class="w-9 h-9 rounded-xl flex items-center justify-center text-on-surface hover:bg-surface-container font-label-md text-label-md transition-colors">2</button>
+<button class="w-9 h-9 rounded-xl flex items-center justify-center text-on-surface hover:bg-surface-container font-label-md text-label-md transition-colors">3</button>
+<span class="px-2 text-outline font-label-md text-label-md">...</span>
+<button class="w-9 h-9 rounded-xl flex items-center justify-center text-on-surface hover:bg-surface-container font-label-md text-label-md transition-colors">4</button>
+<button aria-label="Next Page" class="w-9 h-9 rounded-xl flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</section>
+</div>
+<script>
+  (function initExplorePage() {
+    const searchInput = document.getElementById('hero-search-input');
+    const searchBtn = document.getElementById('search-cta-btn');
+    const cards = Array.from(document.querySelectorAll('.event-card'));
+    const gridContainer = document.getElementById('event-grid-container');
+    const emptyState = document.getElementById('empty-state-view');
+    const paginationWrapper = document.getElementById('pagination-wrapper');
+    const countDisplay = document.getElementById('event-count');
+    const toggleStateBtn = document.getElementById('toggle-state-btn');
+    const toggleStateLabel = document.getElementById('toggle-state-label');
+    const resetSearchBtn = document.getElementById('reset-search-btn');
+    const categorySelect = document.getElementById('select-category');
+    const openOnlyCheck = document.getElementById('filter-open-only');
+    const filterPills = Array.from(document.querySelectorAll('.filter-pill'));
+    const dateFilters = Array.from(document.querySelectorAll('.date-filter'));
+
+    let isForcedEmpty = false;
+
+    function applyFilters() {
+      if (isForcedEmpty) {
+        showEmpty(true);
+        return;
+      }
+
+      const query = (searchInput.value || '').trim().toLowerCase();
+      const selectedCat = categorySelect.value;
+      const openOnly = openOnlyCheck.checked;
+
+      let visibleCount = 0;
+
+      cards.forEach(card => {
+        const title = card.getAttribute('data-title') || '';
+        const cat = card.getAttribute('data-category') || '';
+        const isOpen = card.getAttribute('data-open') === 'true';
+
+        const matchesQuery = !query || title.includes(query);
+        const matchesCategory = (selectedCat === 'all') || cat.includes(selectedCat);
+        const matchesStatus = !openOnly || isOpen;
+
+        if (matchesQuery && matchesCategory && matchesStatus) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      countDisplay.textContent = visibleCount;
+
+      if (visibleCount === 0) {
+        showEmpty(true);
+      } else {
+        showEmpty(false);
+      }
+    }
+
+    function showEmpty(show) {
+      if (show) {
+        gridContainer.classList.add('hidden');
+        emptyState.classList.remove('hidden');
+        paginationWrapper.classList.add('hidden');
+        countDisplay.textContent = '0';
+      } else {
+        gridContainer.classList.remove('hidden');
+        emptyState.classList.add('hidden');
+        paginationWrapper.classList.remove('hidden');
+      }
+    }
+
+    function resetAllFilters() {
+      searchInput.value = '';
+      isForcedEmpty = false;
+      toggleStateLabel.textContent = 'Simulasi Kosong';
+      categorySelect.value = 'all';
+      openOnlyCheck.checked = false;
+
+      filterPills.forEach(pill => {
+        if (pill.getAttribute('data-category') === 'Semua') {
+          pill.className = 'filter-pill active px-3.5 py-1.5 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm transition-all hover:bg-surface-container-lowest shadow-sm';
+        } else {
+          pill.className = 'filter-pill px-3.5 py-1.5 rounded-full bg-surface-container-lowest/15 backdrop-blur-md text-surface-bright font-label-sm text-label-sm transition-all hover:bg-surface-container-lowest/30';
+        }
+      });
+
+      dateFilters.forEach(df => {
+        if (df.getAttribute('data-date') === 'all') {
+          df.className = 'date-filter px-3 py-1.5 rounded-lg text-primary font-label-md text-label-md bg-surface-container-lowest shadow-xs transition-all';
+        } else {
+          df.className = 'date-filter px-3 py-1.5 rounded-lg text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-all';
+        }
+      });
+
+      applyFilters();
+    }
+
+    // Search events
+    searchInput.addEventListener('input', applyFilters);
+    searchBtn.addEventListener('click', applyFilters);
+    categorySelect.addEventListener('change', applyFilters);
+    openOnlyCheck.addEventListener('change', applyFilters);
+
+    // Empty state simulation toggle
+    toggleStateBtn.addEventListener('click', () => {
+      isForcedEmpty = !isForcedEmpty;
+      toggleStateLabel.textContent = isForcedEmpty ? 'Kembalikan Data' : 'Simulasi Kosong';
+      applyFilters();
+    });
+
+    resetSearchBtn.addEventListener('click', resetAllFilters);
+
+    // Quick filter pills in Hero
+    filterPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        filterPills.forEach(p => {
+          p.className = 'filter-pill px-3.5 py-1.5 rounded-full bg-surface-container-lowest/15 backdrop-blur-md text-surface-bright font-label-sm text-label-sm transition-all hover:bg-surface-container-lowest/30';
+        });
+        pill.className = 'filter-pill active px-3.5 py-1.5 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm transition-all hover:bg-surface-container-lowest shadow-sm';
+
+        const cat = pill.getAttribute('data-category');
+        if (cat === 'Semua') {
+          categorySelect.value = 'all';
+        } else if (cat.includes('Tech') || cat.includes('Seminar')) {
+          categorySelect.value = 'Seminar Tech';
+        } else if (cat.includes('Kompetisi')) {
+          categorySelect.value = 'Kompetisi';
+        } else if (cat.includes('Seni')) {
+          categorySelect.value = 'Seni Budaya';
+        } else if (cat.includes('Sosial')) {
+          categorySelect.value = 'Sosial';
+        }
+        applyFilters();
+      });
+    });
+
+    // Date filters
+    dateFilters.forEach(df => {
+      df.addEventListener('click', () => {
+        dateFilters.forEach(item => {
+          item.className = 'date-filter px-3 py-1.5 rounded-lg text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-all';
+        });
+        df.className = 'date-filter px-3 py-1.5 rounded-lg text-primary font-label-md text-label-md bg-surface-container-lowest shadow-xs transition-all';
+        applyFilters();
+      });
+    });
+
+    // Initial run
+    applyFilters();
+  })();
+</script></main><footer class="w-full bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] mt-space-xl"><div class="max-w-7xl mx-auto px-margin py-space-xl"><div class="flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-3"><img alt="EVENT.KITA Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrA5dgWpmXlUweALvYdAQvjg6CPGyT6yBk6gMBMlXa8XPRN7MadhfAmS2DNT7bNIjvUC8CvGy4rfffl6E7zf4eQwZBriovYKqSv9ehOmngFrx9BwqSlX8MyUEhFSlH3eq4S9_IyfTn91RqZFjYjxZ6G4R0faEC-yVUnAm8V4AEbhoUzLJflqt4HvWKPU1gK_45sjPYOrW6ZXBKgAoIzyqftBgTIaaftyBPPeeJrG9YHiXQ"/><span class="font-title-md text-title-md text-on-surface">EVENT.KITA Campus Ecosystem</span></div><div class="flex flex-wrap items-center gap-space-lg text-on-surface-variant font-body-sm text-body-sm"><a class="hover:text-primary transition-colors" href="#">Panduan Mahasiswa</a><a class="hover:text-primary transition-colors" href="#">Kemitraan UKM</a><a class="hover:text-primary transition-colors" href="#">Pusat Bantuan</a><a class="hover:text-primary transition-colors" href="#">Privasi</a></div></div><div class="mt-space-lg pt-space-md text-center text-outline font-label-sm text-label-sm">© 2024 EVENT.KITA. Integrated Campus Event &amp; Ticketing Management Platform.</div></div></footer></body></html>

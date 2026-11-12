@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f8f9ff;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "secondary-container": "#9984fd", "on-tertiary-container": "#e4e7ff", "on-error-container": "#93000a", "tertiary": "#0f45be", "on-secondary-fixed": "#1c0062", "error": "#ba1a1a", "on-primary": "#ffffff", "on-secondary-fixed-variant": "#482fa7", "tertiary-fixed": "#dce1ff", "secondary-fixed": "#e6deff", "on-surface": "#0b1c30", "surface-container-highest": "#d3e4fe", "surface-variant": "#d3e4fe", "surface-container": "#e5eeff", "surface": "#f8f9ff", "primary": "#5728cf", "surface-container-lowest": "#ffffff", "on-tertiary-fixed": "#00164e", "background": "#f8f9ff", "primary-fixed": "#e7deff", "outline-variant": "#cac3d7", "inverse-primary": "#ccbdff", "surface-tint": "#663cdd", "surface-dim": "#cbdbf5", "primary-fixed-dim": "#ccbdff", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#003baf", "outline": "#7a7486", "on-secondary-container": "#2f088f", "tertiary-container": "#365fd7", "surface-container-high": "#dce9ff", "primary-container": "#7048e8", "surface-bright": "#f8f9ff", "on-error": "#ffffff", "secondary": "#604ac1", "surface-container-low": "#eff4ff", "on-primary-container": "#ede4ff", "on-background": "#0b1c30", "on-tertiary": "#ffffff", "tertiary-fixed-dim": "#b6c4ff", "secondary-fixed-dim": "#cabeff", "inverse-surface": "#213145", "on-surface-variant": "#494455", "on-primary-fixed-variant": "#4d17c5", "on-secondary": "#ffffff", "inverse-on-surface": "#eaf1ff", "on-primary-fixed": "#1f005f" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xl": "2.5rem", "margin": "2rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "gutter": "1.5rem", "margin-mobile": "1rem", "gutter-mobile": "1rem", "space-md": "1rem", "space-lg": "1.5rem" }, fontFamily: { "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "label-md": ["Inter"], "body-sm": ["Inter"], "headline-display": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-display-mobile": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "label-lg": ["Inter"], "title-md": ["Plus Jakarta Sans"], "body-md": ["Inter"] }, fontSize: { "headline-lg-mobile": ["26px", { lineHeight: "34px", fontWeight: "700" }], "headline-lg": ["32px", { lineHeight: "40px", fontWeight: "700" }], "body-lg": ["16px", { lineHeight: "26px", fontWeight: "400" }], "headline-sm": ["20px", { lineHeight: "28px", fontWeight: "600" }], "label-md": ["12px", { lineHeight: "16px", fontWeight: "600" }], "body-sm": ["12px", { lineHeight: "18px", fontWeight: "400" }], "headline-display": ["44px", { lineHeight: "52px", fontWeight: "800" }], "headline-md": ["24px", { lineHeight: "32px", fontWeight: "700" }], "headline-display-mobile": ["32px", { lineHeight: "40px", fontWeight: "800" }], "label-sm": ["11px", { lineHeight: "14px", fontWeight: "500" }], "label-lg": ["14px", { lineHeight: "20px", fontWeight: "600" }], "title-md": ["16px", { lineHeight: "24px", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "22px", fontWeight: "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><button aria-label="Kembali" class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface hover:bg-surface-container active:scale-95 transition-all" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><h1 class="font-title-md text-title-md text-on-surface truncate">Kelola &amp; Buat Event</h1><span class="px-space-sm py-0.5 rounded-full bg-[#EBF1FF] text-tertiary font-label-sm text-label-sm tracking-wide shrink-0 font-semibold">Panitia</span></div><span class="font-body-sm text-[11px] text-on-surface-variant truncate">Dashboard Pengelola Kegiatan</span></div></div><div class="flex items-center gap-space-xs shrink-0"><button class="px-space-sm py-1.5 rounded-lg border border-outline-variant bg-surface-container-lowest text-primary font-label-md text-label-md hover:bg-surface-container active:scale-95 transition-all flex items-center gap-1" onclick="alert('Draft disimpan!')" type="button"><span class="material-symbols-outlined text-[16px]">bookmark</span><span class="hidden sm:inline">Simpan</span> Draft</button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 px-margin-mobile bg-surface min-h-screen"><div class="flex flex-col w-full pb-28">
+<!-- Top Dismissible Toast Notification -->
+<div class="mb-space-md p-space-sm bg-surface-container rounded-xl shadow-sm flex items-start gap-space-sm" id="draftToast">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">cloud_done</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="font-label-lg text-label-lg text-on-surface">Tersimpan Berhasil</span>
+<button class="w-6 h-6 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container-high transition-colors" onclick="document.getElementById('draftToast').remove()" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+        Draft event berhasil disimpan ke sistem EventKita secara otomatis.
+      </p>
+</div>
+</div>
+<!-- Stepper Indicator -->
+<div class="mb-space-lg bg-surface-container-lowest rounded-xl p-space-md shadow-sm"><div class="flex items-center justify-between mb-space-sm"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-label-md text-label-md text-primary tracking-wide font-semibold">LANGKAH 1 DARI 3</span></div><span class="font-label-md text-label-md text-on-surface-variant font-medium">65% Selesai</span></div><div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden flex"><div class="bg-primary-container h-full rounded-full w-2/3 transition-all duration-300"></div></div><div class="grid grid-cols-3 gap-space-xs mt-space-sm"><div class="flex items-center gap-1.5 min-w-0"><span class="w-5 h-5 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-[11px] font-bold shrink-0 shadow-sm">1</span><span class="font-label-sm text-label-sm text-primary font-semibold truncate">Info Dasar</span></div><div class="flex items-center gap-1.5 justify-center min-w-0 opacity-80"><span class="w-5 h-5 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-label-sm text-[11px] font-semibold shrink-0">2</span><span class="font-label-sm text-label-sm text-on-surface truncate">Jadwal &amp; Lokasi</span></div><div class="flex items-center gap-1.5 justify-end min-w-0 opacity-60"><span class="w-5 h-5 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-label-sm text-[11px] shrink-0">3</span><span class="font-label-sm text-label-sm text-on-surface truncate">Tiket &amp; SKPI</span></div></div></div>
+<form class="flex flex-col gap-space-lg" id="eventForm" onsubmit="event.preventDefault();">
+<!-- SECTION 1: Informasi Dasar -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded-lg bg-primary-fixed text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</div>
+<div>
+<h2 class="font-title-md text-title-md text-on-surface">Informasi Dasar Event</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Detail utama identitas kegiatan mahasiswa</p>
+</div>
+</div>
+<!-- Field: Nama Event -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface flex items-center justify-between" for="eventName">
+<span>Nama Event <span class="text-error">*</span></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Maks. 80 Karakter</span>
+</label>
+<input class="h-11 w-full rounded-lg bg-surface-container-lowest px-space-sm font-body-md text-body-md text-on-surface shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container" id="eventName" placeholder="Masukkan judul kegiatan yang jelas" type="text" value="National AI Hackathon &amp; Tech Summit 2025"/>
+</div>
+<!-- Field: Kategori Event -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface" for="eventCategory">
+          Kategori Event <span class="text-error">*</span>
+</label>
+<div class="relative">
+<select class="h-11 w-full appearance-none rounded-lg bg-surface-container-lowest px-space-sm pr-10 font-body-md text-body-md text-on-surface shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container" id="eventCategory">
+<option selected="">Kompetisi &amp; Hackathon</option>
+<option>Workshop &amp; Bootcamp</option>
+<option>Seminar &amp; Konferensi</option>
+<option>Konser, Seni &amp; Budaya</option>
+<option>Kegiatan Sosial &amp; Pengabdian</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 text-on-surface-variant pointer-events-none text-[20px]">
+            expand_more
+          </span>
+</div>
+</div>
+<!-- Field: Penyelenggara Terverifikasi (Read-only) -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface">Penyelenggara Terverifikasi</span>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">domain_verification</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-label-lg text-label-lg text-on-surface truncate">BEM Fasilkom x GDG on Campus</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Terkunci otomatis ke kredensial organisasi Anda</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px] shrink-0">lock</span>
+</div>
+</div>
+<!-- Field: Deskripsi Acara -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface" for="eventDescription">
+          Deskripsi Lengkap Acara <span class="text-error">*</span>
+</label>
+<!-- Rich Text Mini Toolbar -->
+<div class="flex items-center gap-1 p-1 bg-surface-container rounded-t-lg">
+<button aria-label="Tebal" class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high" type="button">
+<span class="material-symbols-outlined text-[18px]">format_bold</span>
+</button>
+<button aria-label="Miring" class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high" type="button">
+<span class="material-symbols-outlined text-[18px]">format_italic</span>
+</button>
+<button aria-label="Garis Bawah" class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high" type="button">
+<span class="material-symbols-outlined text-[18px]">format_underlined</span>
+</button>
+<div class="w-px h-5 bg-surface-container-highest my-auto mx-0.5"></div>
+<button aria-label="Daftar Poin" class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high" type="button">
+<span class="material-symbols-outlined text-[18px]">format_list_bulleted</span>
+</button>
+<button aria-label="Tautan" class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high" type="button">
+<span class="material-symbols-outlined text-[18px]">link</span>
+</button>
+<button aria-label="Kode" class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high" type="button">
+<span class="material-symbols-outlined text-[18px]">code</span>
+</button>
+</div>
+<textarea class="w-full rounded-b-lg bg-surface-container-lowest p-space-sm font-body-md text-body-md text-on-surface shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container" id="eventDescription" placeholder="Tuliskan gambaran umum, kriteria partisipan, ketentuan lomba, dan benefit yang didapat peserta..." rows="4">Ajang kompetisi pengembangan aplikasi berbasis Artificial Intelligence untuk menyelesaikan masalah perkotaan dan keberlanjutan energi. Dibuka untuk seluruh mahasiswa aktif D3/D4/S1 seluruh Indonesia.</textarea>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm mt-0.5">
+<span>Gunakan markdown untuk format cepat</span>
+<span>194 / 2000 Karakter</span>
+</div>
+</div>
+</section>
+<!-- SECTION 2: Banner & Media Visual -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded-lg bg-secondary-fixed text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">image</span>
+</div>
+<div>
+<h2 class="font-title-md text-title-md text-on-surface">Banner &amp; Media Visual</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Poster resmi untuk kartu feed &amp; detail</p>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+          Rasio 16:9
+        </span>
+</div>
+<!-- Upload Zone -->
+<div class="rounded-xl bg-surface-container-low p-space-md flex flex-col items-center justify-center text-center gap-space-xs">
+<div class="w-12 h-12 rounded-full bg-primary-fixed text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">cloud_upload</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Unggah Poster Utama</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">PNG, JPG, atau WEBP (Maksimal 5MB)</span>
+</div>
+<button class="mt-1 px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm active:scale-95 transition-all" type="button">
+          Pilih Dokumen
+        </button>
+</div>
+<!-- Uploaded File Item Chip -->
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-12 h-8 rounded bg-surface-container-highest overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Futuristic neon tech hackathon banner design with abstract circuit waves, deep indigo and cyber violet lighting on student computer display, modern typography composition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqr4OFD-VPBuHR5NgYnNCVw4EOSzmF86galDzVhUuyZDmWsFuZxOOoERR126WbqVt6texoIWP04PdobVMDw8GceZzUo7iG8h-oRroOds3mRsIOwIUjJr9uRtXjh2lOo6J6zy1baoiaW9gJBbKKjvAslW_hWciy0AmEySZO35vC3gX1E32hpFbLL1tMCIoLItsRy5KITdWNAVsfa1T3a814obuQaTGsEbBkFhQdQRWm"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">hackathon-banner-2025-final.webp</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">1.8 MB • 1920x1080px</span>
+</div>
+</div>
+<button aria-label="Hapus File" class="w-8 h-8 rounded-full flex items-center justify-center text-error hover:bg-error-container/20 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+<!-- Live Preview: Tampilan Kartu Mahasiswa -->
+<div class="flex flex-col gap-space-xs mt-1">
+<div class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-tertiary">preview</span>
+<span class="font-label-lg text-label-lg">Live Preview: Tampilan Kartu Mahasiswa</span>
+</div>
+<!-- Mock Student Card Preview -->
+<div class="rounded-xl overflow-hidden bg-surface-container-low shadow-sm">
+<div class="relative w-full h-36">
+<img class="w-full h-full object-cover" data-alt="Digital art representing a vibrant Indonesian campus hackathon team working on AI coding laptops under dynamic ultraviolet purple auditorium ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPllkF0bhpTytur7QNPCkIIpbfOFZ90dZkA7ZKjXkIqWDQNSTEQVfaYC4r0BmZ8kMYedDpKXzVFvROeI7GspztAf1w0HkqhfOysUtgQp5qjMKGXHxdMeI2IJmPWO6eGb_hP8DDEoTnZ46a46s3mH9AVENrmwQnHpqO0E6frP3bB7_nuv5zzRFqmyK1GP9oLDMALakUZdW7uBimfLutPyPxtpibIHRncNv-fdNV3Bk4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
+<div class="absolute top-2 left-2 flex gap-1">
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">
+                Hackathon
+              </span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">
+                4.0 SKPI
+              </span>
+</div>
+<span class="absolute bottom-2 right-2 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur text-primary font-label-sm text-label-sm font-semibold">
+              Hybrid Event
+            </span>
+</div>
+<div class="p-space-sm flex flex-col gap-space-xs">
+<h3 class="font-title-md text-title-md text-on-surface line-clamp-1">National AI Hackathon &amp; Tech Summit 2025</h3>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">calendar_today</span> 20 Nov 2025
+              </span>
+<span>•</span>
+<span class="flex items-center gap-1 truncate">
+<span class="material-symbols-outlined text-[15px]">location_on</span> Lab Komputer Lt. 3
+              </span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-lg text-label-lg text-tertiary">Gratis Terbuka</span>
+<button class="px-space-sm py-1 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md" type="button">
+                Daftar Sekarang
+              </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Verification Info Callout -->
+<div class="p-space-sm rounded-lg bg-tertiary-fixed/40 text-on-tertiary-fixed flex gap-space-sm items-start">
+<span class="material-symbols-outlined text-[20px] text-tertiary shrink-0 mt-0.5">policy</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+          Setelah dikirim, proposal acara ditinjau dalam 1-2 hari kerja oleh <strong>Biro Kemahasiswaan</strong> sebelum tiket publik dibuka.
+        </p>
+</div>
+</section>
+<!-- SECTION 3: Waktu, Lokasi & Pelaksanaan -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded-lg bg-tertiary-fixed text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+</div>
+<div>
+<h2 class="font-title-md text-title-md text-on-surface">Waktu &amp; Tempat Pelaksanaan</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Rincian jadwal dan aksesibilitas ruang</p>
+</div>
+</div>
+<!-- Format Pelaksanaan Selector -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface">Format Acara</span>
+<div class="grid grid-cols-3 gap-1.5 p-1 bg-surface-container-low rounded-xl">
+<button class="py-2 px-1 rounded-lg font-label-sm text-label-sm text-on-surface-variant text-center hover:bg-surface-container transition-colors" type="button">
+            Offline Fisik
+          </button>
+<button class="py-2 px-1 rounded-lg font-label-sm text-label-sm text-on-surface-variant text-center hover:bg-surface-container transition-colors" type="button">
+            Online Virtual
+          </button>
+<button class="py-2 px-1 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm text-center shadow-sm" type="button">
+            Hybrid (Pilihan)
+          </button>
+</div>
+</div>
+<!-- Tanggal & Waktu Fields -->
+<div class="grid grid-cols-1 gap-space-sm">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface" for="eventDate">Tanggal Kegiatan <span class="text-error">*</span></label>
+<div class="relative">
+<input class="h-11 w-full rounded-lg bg-surface-container-lowest px-space-sm font-body-md text-body-md text-on-surface shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container" id="eventDate" type="date" value="2025-11-20"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface" for="startTime">Mulai <span class="text-error">*</span></label>
+<input class="h-11 w-full rounded-lg bg-surface-container-lowest px-space-sm font-body-md text-body-md text-on-surface shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container" id="startTime" type="time" value="08:30"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface" for="endTime">Selesai <span class="text-error">*</span></label>
+<input class="h-11 w-full rounded-lg bg-surface-container-lowest px-space-sm font-body-md text-body-md text-on-surface shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container" id="endTime" type="time" value="17:00"/>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">info</span>
+          Waktu selesai harus lebih besar dari waktu mulai (WIB)
+        </span>
+</div>
+<!-- Lokasi Kampus / Ruangan -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface" for="locationRoom">Lokasi Kampus / Gedung &amp; Ruang <span class="text-error">*</span></label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-3 text-on-surface-variant text-[20px]">
+            apartment
+          </span>
+<input class="h-11 w-full rounded-lg bg-surface-container-lowest pl-10 pr-space-sm font-body-md text-body-md text-on-surface shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container" id="locationRoom" placeholder="Contoh: Gedung Rektorat Lt. 2 Hall Utama" type="text" value="Auditorium Gedung Riset &amp; Lab Komputer Lt. 3"/>
+</div>
+</div>
+<!-- Tautan Virtual Meeting -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface" for="virtualLink">Tautan Virtual Meeting (Zoom / GMeet)</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-3 text-on-surface-variant text-[20px]">
+            videocam
+          </span>
+<input class="h-11 w-full rounded-lg bg-surface-container-lowest pl-10 pr-space-sm font-body-md text-body-md text-on-surface shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container" id="virtualLink" placeholder="https://zoom.us/j/..." type="url" value="https://zoom.us/j/eventkita-ai-hackathon"/>
+</div>
+</div>
+</section>
+<!-- SECTION 4: Kuota, Tiket & Sertifikasi SKPI -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded-lg bg-primary-fixed text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">confirmation_number</span>
+</div>
+<div>
+<h2 class="font-title-md text-title-md text-on-surface">Kuota, Tiket &amp; SKPI</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Kapasitas peserta dan kredit poin sertifikat</p>
+</div>
+</div>
+<!-- Kuota & Batas Akhir -->
+<div class="grid grid-cols-1 gap-space-sm">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface" for="quotaSeats">Kuota Kursi Maksimal <span class="text-error">*</span></label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-3 text-on-surface-variant text-[20px]">
+              group
+            </span>
+<input class="h-11 w-full rounded-lg bg-surface-container-lowest pl-10 pr-space-sm font-body-md text-body-md text-on-surface shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container" id="quotaSeats" min="1" type="number" value="400"/>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Kapasitas total gabungan daring dan luring</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface" for="deadlineDate">Batas Akhir Pendaftaran <span class="text-error">*</span></label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-3 text-on-surface-variant text-[20px]">
+              event_busy
+            </span>
+<input class="h-11 w-full rounded-lg bg-surface-container-lowest pl-10 pr-space-sm font-body-md text-body-md text-on-surface shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container" id="deadlineDate" type="text" value="18/11/2025, 23:59 WIB"/>
+</div>
+</div>
+</div>
+<!-- Skema Pembiayaan -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-lg text-label-lg text-on-surface">Skema Pembiayaan</span>
+<div class="flex flex-col gap-space-xs">
+<!-- Gratis Option (Selected) -->
+<div class="p-space-sm rounded-xl bg-primary-fixed/30 flex items-start justify-between cursor-pointer">
+<div class="flex items-start gap-space-sm">
+<div class="w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center mt-0.5 shrink-0">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface">Gratis Terbuka (Free Admission)</span>
+<span class="px-1.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[10px]">Mahasiswa</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tidak dipungut biaya registrasi bagi peserta kampus</span>
+</div>
+</div>
+</div>
+<!-- Berbayar Option -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-start justify-between cursor-pointer opacity-80">
+<div class="flex items-start gap-space-sm">
+<div class="w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center mt-0.5 shrink-0">
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Berbayar (IDR)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Menggunakan integrasi Virtual Account kampus</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">payments</span>
+</div>
+</div>
+</div>
+<!-- Pengajuan Angka Kredit SKPI Card -->
+<div class="p-space-sm rounded-xl bg-tertiary-fixed/30 flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">workspace_premium</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Angka Kredit SKPI Diajukan</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Sertifikat Pendamping Ijazah resmi Universitas</span>
+</div>
+</div>
+<div class="px-space-sm py-1 rounded-full bg-tertiary text-on-tertiary font-headline-sm text-headline-sm shrink-0">
+          4.0 Poin
+        </div>
+</div>
+<!-- Persetujuan TOR Checkbox -->
+<label class="flex items-start gap-space-sm cursor-pointer pt-1">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary focus:ring-primary-container" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">
+          Saya menyatakan telah melampirkan Term of Reference (TOR) kegiatan ke Direktorat Kemahasiswaan untuk verifikasi SKPI resmi Rektorat.
+        </span>
+</label>
+</section>
+</form>
+<!-- Fixed Bottom Sticky Action Bar -->
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-surface-container-lowest/95 backdrop-blur-md shadow-lg p-space-sm pb-safe"><div class="w-full flex items-center gap-space-sm"><button class="flex-1 h-12 rounded-xl border border-outline-variant bg-surface-container-lowest text-primary hover:bg-surface-container font-label-lg text-label-lg flex items-center justify-center gap-1.5 active:scale-95 transition-all shadow-sm" onclick="alert('Draft berhasil diperbarui!')" type="button"><span class="material-symbols-outlined text-[18px]">bookmark_border</span><span>Simpan Draft</span></button><button class="flex-[1.4] h-12 rounded-xl bg-primary-container text-on-primary hover:opacity-95 font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md active:scale-95 transition-all" onclick="alert('Formulir berhasil diajukan ke Biro Kemahasiswaan!')" type="button"><span class="font-semibold">Ajukan Verifikasi</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span></button></div></div>
+</div></main></body></html>

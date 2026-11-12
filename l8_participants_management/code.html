@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container":"#e5eeff","outline-variant":"#cac3d7","secondary-fixed-dim":"#cabeff","primary":"#5728cf","error-container":"#ffdad6","inverse-surface":"#213145","secondary-fixed":"#e6deff","on-secondary-fixed":"#1c0062","on-primary-fixed-variant":"#4d17c5","on-surface-variant":"#494455","tertiary-fixed":"#dce1ff","primary-fixed":"#e7deff","error":"#ba1a1a","surface-container-low":"#eff4ff","secondary-container":"#9984fd","primary-fixed-dim":"#ccbdff","surface-tint":"#663cdd","on-tertiary-container":"#e4e7ff","surface-bright":"#f8f9ff","background":"#f8f9ff","on-background":"#0b1c30","on-error":"#ffffff","on-tertiary":"#ffffff","on-primary-container":"#ede4ff","inverse-on-surface":"#eaf1ff","primary-container":"#7048e8","on-primary-fixed":"#1f005f","surface-container-lowest":"#ffffff","surface-dim":"#cbdbf5","on-tertiary-fixed-variant":"#003baf","surface":"#f8f9ff","on-tertiary-fixed":"#00164e","surface-variant":"#d3e4fe","on-secondary":"#ffffff","on-primary":"#ffffff","surface-container-highest":"#d3e4fe","inverse-primary":"#ccbdff","tertiary-container":"#365fd7","on-secondary-fixed-variant":"#482fa7","surface-container-high":"#dce9ff","outline":"#7a7486","tertiary":"#0f45be","on-secondary-container":"#2f088f","tertiary-fixed-dim":"#b6c4ff","on-error-container":"#93000a","secondary":"#604ac1","on-surface":"#0b1c30"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"gutter-mobile":"1rem","space-sm":"0.5rem","gutter":"1.5rem","space-xs":"0.25rem","space-md":"1rem","margin":"2rem","space-xl":"2.5rem","margin-mobile":"1rem","space-lg":"1.5rem"},fontFamily:{"body-md":["Inter"],"headline-display":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-sm":["Inter"],"label-lg":["Inter"],"headline-sm":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-display-mobile":["Plus Jakarta Sans"],"label-md":["Inter"]},fontSize:{"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"headline-display":["44px",{"lineHeight":"52px","fontWeight":"800"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"700"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","fontWeight":"700"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","fontWeight":"500"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"26px","fontWeight":"400"}],"headline-display-mobile":["32px",{"lineHeight":"40px","fontWeight":"800"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(73,48,168,0.04)] z-50 flex flex-col justify-between py-space-md"><div class="px-space-md"><div class="flex items-center gap-space-xs mb-space-sm px-space-xs"><span class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-on-primary font-headline-sm text-headline-sm">E</span><span class="font-headline-sm text-headline-sm tracking-tight text-primary">EVENT.KITA</span></div><div class="mb-space-lg px-space-xs"><span class="inline-block px-space-sm py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md">Panitia Event</span></div><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary-container font-label-lg rounded-xl"><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="panitia-dashboard" href="#"><span class="material-symbols-outlined mr-space-sm text-[20px]">space_dashboard</span><span class="font-label-lg text-label-lg">Dashboard</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="panitia-manage-events" href="#"><span class="material-symbols-outlined mr-space-sm text-[20px]">event_available</span><span class="font-label-lg text-label-lg">Manage Events</span></a><a aria-current="page" class="flex items-center px-space-md py-space-sm transition-all bg-primary-container text-on-primary-container font-label-lg rounded-xl" data-path="panitia-participants" href="#"><span class="material-symbols-outlined mr-space-sm text-[20px]">group</span><span class="font-label-lg text-label-lg">Participants</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="panitia-documentation" href="#"><span class="material-symbols-outlined mr-space-sm text-[20px]">photo_library</span><span class="font-label-lg text-label-lg">Documentation</span></a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="panitia-activity-reports" href="#"><span class="material-symbols-outlined mr-space-sm text-[20px]">assignment_turned_in</span><span class="font-label-lg text-label-lg">Activity Reports</span></a></nav></div><div class="px-space-md"><a class="flex items-center px-space-md py-space-sm rounded-xl text-error hover:bg-error-container hover:text-on-error-container transition-all" data-path="panitia-logout" href="#"><span class="material-symbols-outlined mr-space-sm text-[20px]">logout</span><span class="font-label-lg text-label-lg">Logout</span></a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(73,48,168,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center bg-surface-container-low px-space-md py-1.5 rounded-full w-80 text-on-surface-variant"><span class="material-symbols-outlined text-[18px] mr-space-xs">search</span><span class="font-body-sm text-body-sm text-outline">Cari peserta, tiket, berkas LPJ...</span></div><div class="flex items-center gap-space-md"><button class="w-9 h-9 rounded-full hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant relative"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm"><div class="text-right"><div class="font-label-lg text-label-lg text-on-surface leading-tight">BEM Fasilkom Official</div><div class="font-body-sm text-body-sm text-outline">Panitia Event</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 bg-surface w-full min-h-screen px-space-lg py-space-md"><div class="flex flex-col w-full space-y-space-lg">
+<!-- Breadcrumb & Top Page Header -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs text-outline font-label-md text-label-md mb-1.5">
+<span class="hover:text-primary transition-colors cursor-pointer">Organizer Portal</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-semibold">Participants Management</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Manajemen Peserta &amp; Presensi Event</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl mt-1">
+        Pantau data pendaftar, cetak ID badge, validasi kehadiran tiket QR real-time, dan sinkronisasi poin SKPI kemahasiswaan.
+      </p>
+</div>
+<!-- Quick Tool Actions -->
+<div class="flex items-center gap-space-sm self-start md:self-auto flex-wrap">
+<button class="inline-flex items-center gap-1.5 px-space-md py-2.5 rounded-xl bg-surface-container-lowest text-primary hover:bg-surface-container-high transition-all shadow-sm font-label-lg text-label-lg active:scale-95" onclick="openModal('addParticipantModal')">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span>+ Tambah Manual</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-space-md py-2.5 rounded-xl bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high transition-all shadow-sm font-label-lg text-label-lg active:scale-95" onclick="exportCSV()">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Export Excel / CSV</span>
+</button>
+<button class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary text-on-primary hover:bg-on-primary-fixed-variant transition-all shadow-md shadow-primary/20 font-label-lg text-label-lg active:scale-95" onclick="openModal('qrScannerModal')">
+<span class="material-symbols-outlined text-[20px]">qr_code_scanner</span>
+<span>Scan QR Presensi</span>
+</button>
+</div>
+</div>
+<!-- Interactive State Switcher (Simulator for UX Demo) -->
+<div class="bg-surface-container-low p-2 rounded-2xl flex items-center justify-between flex-wrap gap-2">
+<div class="flex items-center gap-2 px-2">
+<span class="material-symbols-outlined text-primary text-[18px]">tune</span>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Preview Mode:</span>
+</div>
+<div class="flex items-center gap-1.5 flex-wrap">
+<button class="px-3 py-1.5 rounded-xl font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all" id="btn-state-normal" onclick="switchState('normal')">
+        Data Lengkap (Normal)
+      </button>
+<button class="px-3 py-1.5 rounded-xl font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high transition-all" id="btn-state-searched" onclick="switchState('searched')">
+        Hasil Pencarian (1 Peserta)
+      </button>
+<button class="px-3 py-1.5 rounded-xl font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high transition-all" id="btn-state-empty" onclick="switchState('empty')">
+        Pencarian Kosong (Empty State)
+      </button>
+<button class="px-3 py-1.5 rounded-xl font-label-md text-label-md bg-secondary-fixed text-on-secondary-fixed hover:bg-primary-fixed-dim transition-all flex items-center gap-1" id="btn-state-modal" onclick="openModal('detailModal')">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Modal Detail SKPI</span>
+</button>
+</div>
+</div>
+<!-- Summary KPI Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1: Total Pendaftar -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute right-0 top-0 translate-x-3 -translate-y-3 w-24 h-24 bg-primary/5 rounded-full blur-xl pointer-events-none group-hover:scale-125 transition-transform"></div>
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Total Pendaftar</span>
+<div class="w-9 h-9 rounded-xl bg-primary-fixed text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">groups</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2 mb-1.5">
+<span class="font-headline-lg text-headline-lg text-on-surface tracking-tight">400</span>
+<span class="font-label-md text-label-md text-outline">/ 400 Kuota</span>
+</div>
+<div class="flex items-center gap-1.5 text-tertiary">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span class="font-label-sm text-label-sm font-semibold">+12% dari target awal panitia</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-3 overflow-hidden">
+<div class="bg-primary h-full rounded-full w-full"></div>
+</div>
+</div>
+<!-- Card 2: Hadir (Attended) -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute right-0 top-0 translate-x-3 -translate-y-3 w-24 h-24 bg-emerald-500/5 rounded-full blur-xl pointer-events-none group-hover:scale-125 transition-transform"></div>
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Kehadiran (Attended)</span>
+<div class="w-9 h-9 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2 mb-1.5">
+<span class="font-headline-lg text-headline-lg text-emerald-600 tracking-tight">342</span>
+<span class="font-label-md text-label-md text-outline">Mahasiswa</span>
+</div>
+<div class="flex items-center gap-1.5 text-emerald-600">
+<span class="material-symbols-outlined text-[16px]">how_to_reg</span>
+<span class="font-label-sm text-label-sm font-semibold">85.5% Terverifikasi Fisik/Hybrid</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-3 overflow-hidden">
+<div class="bg-emerald-500 h-full rounded-full" style="width: 85.5%;"></div>
+</div>
+</div>
+<!-- Card 3: Belum Hadir (Registered) -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute right-0 top-0 translate-x-3 -translate-y-3 w-24 h-24 bg-tertiary/5 rounded-full blur-xl pointer-events-none group-hover:scale-125 transition-transform"></div>
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Belum Hadir (Registered)</span>
+<div class="w-9 h-9 rounded-xl bg-surface-container text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">pending_actions</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2 mb-1.5">
+<span class="font-headline-lg text-headline-lg text-tertiary tracking-tight">46</span>
+<span class="font-label-md text-label-md text-outline">Mahasiswa</span>
+</div>
+<div class="flex items-center gap-1.5 text-outline">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span class="font-label-sm text-label-sm">11.5% Siap antrean check-in</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-3 overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 11.5%;"></div>
+</div>
+</div>
+<!-- Card 4: Tidak Hadir (Absent) -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute right-0 top-0 translate-x-3 -translate-y-3 w-24 h-24 bg-error/5 rounded-full blur-xl pointer-events-none group-hover:scale-125 transition-transform"></div>
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Tidak Hadir (Absent)</span>
+<div class="w-9 h-9 rounded-xl bg-error-container text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">person_off</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2 mb-1.5">
+<span class="font-headline-lg text-headline-lg text-error tracking-tight">12</span>
+<span class="font-label-md text-label-md text-outline">Mahasiswa</span>
+</div>
+<div class="flex items-center gap-1.5 text-error">
+<span class="material-symbols-outlined text-[16px]">cancel</span>
+<span class="font-label-sm text-label-sm">3.0% Tanpa konfirmasi presensi</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-3 overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 3%;"></div>
+</div>
+</div>
+</div>
+<!-- Event Selector & Filtering Hub -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col gap-4">
+<!-- Row 1: Event Selector and Dynamic Search -->
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-3">
+<!-- Active Event Selector -->
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-outline whitespace-nowrap">Pilih Event:</span>
+<div class="relative inline-block w-full sm:w-auto min-w-[320px]">
+<select class="w-full appearance-none bg-surface-container-low text-on-surface font-title-md text-title-md py-2.5 pl-9 pr-10 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 cursor-pointer" id="eventSelector" onchange="changeEvent(this.value)">
+<option value="hackathon">National AI Hackathon &amp; Tech Summit 2025 (Aktif)</option>
+<option value="uiux">UI/UX Design Masterclass 2025</option>
+<option value="cyber">Seminar Cyber Security &amp; Data Ethics</option>
+</select>
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-500 absolute left-3.5 top-1/2 -translate-y-1/2 animate-pulse"></span>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- Quick Search Bar -->
+<div class="relative flex-1 max-w-md">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span>
+<input class="w-full bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md py-2 pl-10 pr-9 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" id="mainSearchInput" onkeyup="handleSearchInput(event)" placeholder="Cari nama peserta, NIM, atau email kampus..." type="text"/>
+<button class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-outline hover:text-on-surface" id="clearSearchBtn" onclick="clearSearch()">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+<!-- Row 2: Status Filter Tabs and Quick Count Pills -->
+<div class="flex items-center justify-between flex-wrap gap-2 pt-2">
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1 max-w-full">
+<button class="px-3.5 py-1.5 rounded-xl font-label-md text-label-md bg-primary-container text-on-primary-container shadow-sm transition-all flex items-center gap-1.5 whitespace-nowrap" id="filter-pill-all" onclick="filterStatus('ALL')">
+<span>Semua</span>
+<span class="bg-primary/20 px-2 py-0.5 rounded-full text-[11px] font-semibold">400</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-xl font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-all flex items-center gap-1.5 whitespace-nowrap" id="filter-pill-attended" onclick="filterStatus('Attended')">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+<span>Attended</span>
+<span class="bg-surface-container-high px-2 py-0.5 rounded-full text-[11px]">342</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-xl font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-all flex items-center gap-1.5 whitespace-nowrap" id="filter-pill-registered" onclick="filterStatus('Registered')">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Registered</span>
+<span class="bg-surface-container-high px-2 py-0.5 rounded-full text-[11px]">46</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-xl font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-all flex items-center gap-1.5 whitespace-nowrap" id="filter-pill-absent" onclick="filterStatus('Absent')">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span>Absent</span>
+<span class="bg-surface-container-high px-2 py-0.5 rounded-full text-[11px]">12</span>
+</button>
+</div>
+<div class="flex items-center gap-2 text-outline font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-emerald-500"></span> Sync SKPI Aktif</span>
+<span>•</span>
+<span>Terakhir sinkronisasi: 2 menit yang lalu</span>
+</div>
+</div>
+</div>
+<!-- Main Table Section -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden">
+<!-- Table Header Info Bar -->
+<div class="px-space-md py-3.5 bg-surface-container-low/50 flex items-center justify-between flex-wrap gap-2">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface">Daftar Kehadiran Peserta</span>
+<span class="px-2 py-0.5 rounded-md bg-primary-fixed text-primary font-label-sm text-label-sm font-semibold" id="tableFilterIndicator">Semua Peserta (400)</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="inline-flex items-center gap-1 text-on-surface-variant hover:text-primary font-label-sm text-label-sm py-1 px-2.5 rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-[16px]">filter_list</span>
+<span>Filter Lanjutan</span>
+</button>
+<button class="inline-flex items-center gap-1 text-on-surface-variant hover:text-primary font-label-sm text-label-sm py-1 px-2.5 rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span>Cetak ID Card Masal</span>
+</button>
+</div>
+</div>
+<!-- Data Table Container -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse" id="participantsTable">
+<thead>
+<tr class="bg-surface-container-lowest text-outline font-label-md text-label-md uppercase tracking-wider">
+<th class="py-3.5 px-4 w-12 text-center">
+<input class="rounded accent-primary cursor-pointer w-4 h-4" type="checkbox"/>
+</th>
+<th class="py-3.5 px-4">No</th>
+<th class="py-3.5 px-4">Data Mahasiswa</th>
+<th class="py-3.5 px-4">Email Kampus &amp; Fakultas</th>
+<th class="py-3.5 px-4">Jalur Pendaftaran</th>
+<th class="py-3.5 px-4">Waktu Registrasi</th>
+<th class="py-3.5 px-4">Status Presensi</th>
+<th class="py-3.5 px-4 text-center">Aksi</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low font-body-md text-body-md text-on-surface" id="tableBody">
+<!-- Row 1: Ahmad Rizky -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group" data-name="Ahmad Rizky Pratama" data-nim="22019482" data-status="Attended">
+<td class="py-4 px-4 text-center">
+<input class="rounded accent-primary cursor-pointer w-4 h-4" type="checkbox"/>
+</td>
+<td class="py-4 px-4 font-label-md text-label-md text-outline">01</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm bg-surface-container" data-alt="Portrait of Indonesian male university computer science student smiling confident in tech summit, wearing college jacket, bright modern campus setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdYm0UhRlxb0Sdsl3f5RvRUoIl6L5fsQta7g0GyY8dZ1daKQUf8Kq5iUnDJHMhAm0MxC-GynygvfR8a0Yj5_pnAyUBjZvjU3jcYNxxs4qk2V6Bst9HpggMFkCQr-mcHc5pfWv8etFErQbV6iFp31jjmGiDFcE6xt1VOpx5xv7z2FCL5ijDU6xSTVb-f2VRXb9wMb_yxjoL94QAwMOxyjOmF4tWVMPUrFD_Xnp-t3pG"/>
+<div>
+<div class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors font-semibold">Ahmad Rizky Pratama</div>
+<div class="font-body-sm text-body-sm text-outline flex items-center gap-1.5">
+<span>NIM 22019482</span>
+<span>•</span>
+<span class="inline-flex items-center text-emerald-600 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] mr-0.5">verified_user</span> KTM OK
+                    </span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="text-on-surface font-medium">ahmad.rizky@ui.ac.id</div>
+<div class="font-label-sm text-label-sm text-outline">Fakultas Ilmu Komputer (Fasilkom)</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">devices</span> Hybrid
+              </span>
+</td>
+<td class="py-4 px-4">
+<div class="font-medium text-on-surface">18 Okt 2025</div>
+<div class="font-body-sm text-body-sm text-outline">08:15 WIB</div>
+</td>
+<td class="py-4 px-4">
+<div class="relative inline-block">
+<select class="appearance-none font-label-md text-label-md font-semibold px-3 py-1 pr-7 rounded-full bg-emerald-100 text-emerald-800 cursor-pointer focus:outline-none focus:ring-1 focus:ring-emerald-400" onchange="updateStatusPill(this)">
+<option selected="" value="Attended">Attended</option>
+<option value="Registered">Registered</option>
+<option value="Absent">Absent</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-[14px] text-emerald-800 pointer-events-none">arrow_drop_down</span>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg text-outline hover:text-primary hover:bg-surface-container-high transition-all" onclick="previewParticipant('Ahmad Rizky Pratama', '22019482', 'Fakultas Ilmu Komputer', 'ahmad.rizky@ui.ac.id', 'Attended', 'Hybrid', '18 Okt 2025, 08:15 WIB', '#TCK-4819')" title="Detail Peserta">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg text-outline hover:text-tertiary hover:bg-surface-container-high transition-all" onclick="resendTicket('Ahmad Rizky Pratama')" title="Kirim Ulang E-Ticket">
+<span class="material-symbols-outlined text-[18px]">outgoing_mail</span>
+</button>
+<button class="p-1.5 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container-high transition-all" title="Menu Lainnya">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Siti Nurhaliza Putri -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group" data-name="Siti Nurhaliza Putri" data-nim="22018831" data-status="Attended">
+<td class="py-4 px-4 text-center">
+<input class="rounded accent-primary cursor-pointer w-4 h-4" type="checkbox"/>
+</td>
+<td class="py-4 px-4 font-label-md text-label-md text-outline">02</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm bg-surface-container" data-alt="Portrait of Indonesian female engineering student wearing clean hijab with badge lanyard attending workshop indoors, natural soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKauy6wRrTuJXuL941VL-shAAw-V-oCfNLFzHAK-sdEYh2nBuQGmeDfI8Q0JotmeJVoEzPWT61rD6oe246ff73Kk7j_A9sQQUK3UPDuJK2NlEI8PNKJ8_NtrcOHvF6t2I3CNbU6IMOKz3XtkysP4V_KQeuDDX27ljd6_vF8jNDlfHpmBCa2yoytVZPl8g4V-iiH5GT_EGYLGw7PB1yhOD9UTf3DVnLeODCDIffx2ty"/>
+<div>
+<div class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors font-semibold">Siti Nurhaliza Putri</div>
+<div class="font-body-sm text-body-sm text-outline flex items-center gap-1.5">
+<span>NIM 22018831</span>
+<span>•</span>
+<span class="inline-flex items-center text-emerald-600 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] mr-0.5">verified_user</span> KTM OK
+                    </span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="text-on-surface font-medium">siti.nurhaliza@ui.ac.id</div>
+<div class="font-label-sm text-label-sm text-outline">Fakultas Teknik (FT)</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">apartment</span> On-site
+              </span>
+</td>
+<td class="py-4 px-4">
+<div class="font-medium text-on-surface">18 Okt 2025</div>
+<div class="font-body-sm text-body-sm text-outline">08:22 WIB</div>
+</td>
+<td class="py-4 px-4">
+<div class="relative inline-block">
+<select class="appearance-none font-label-md text-label-md font-semibold px-3 py-1 pr-7 rounded-full bg-emerald-100 text-emerald-800 cursor-pointer focus:outline-none focus:ring-1 focus:ring-emerald-400" onchange="updateStatusPill(this)">
+<option selected="" value="Attended">Attended</option>
+<option value="Registered">Registered</option>
+<option value="Absent">Absent</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-[14px] text-emerald-800 pointer-events-none">arrow_drop_down</span>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg text-outline hover:text-primary hover:bg-surface-container-high transition-all" onclick="previewParticipant('Siti Nurhaliza Putri', '22018831', 'Fakultas Teknik', 'siti.nurhaliza@ui.ac.id', 'Attended', 'On-site', '18 Okt 2025, 08:22 WIB', '#TCK-5520')" title="Detail Peserta">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg text-outline hover:text-tertiary hover:bg-surface-container-high transition-all" onclick="resendTicket('Siti Nurhaliza Putri')" title="Kirim Ulang E-Ticket">
+<span class="material-symbols-outlined text-[18px]">outgoing_mail</span>
+</button>
+<button class="p-1.5 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container-high transition-all" title="Menu Lainnya">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Dimas Nugroho -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group" data-name="Dimas Nugroho" data-nim="21017409" data-status="Registered">
+<td class="py-4 px-4 text-center">
+<input class="rounded accent-primary cursor-pointer w-4 h-4" type="checkbox"/>
+</td>
+<td class="py-4 px-4 font-label-md text-label-md text-outline">03</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-sm shadow-sm">
+                  DN
+                </div>
+<div>
+<div class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors font-semibold">Dimas Nugroho</div>
+<div class="font-body-sm text-body-sm text-outline flex items-center gap-1.5">
+<span>NIM 21017409</span>
+<span>•</span>
+<span class="inline-flex items-center text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] mr-0.5">help_outline</span> Belum Tap QR
+                    </span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="text-on-surface font-medium">dimas.n@ui.ac.id</div>
+<div class="font-label-sm text-label-sm text-outline">Fakultas MIPA</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">apartment</span> On-site
+              </span>
+</td>
+<td class="py-4 px-4">
+<div class="font-medium text-on-surface">18 Okt 2025</div>
+<div class="font-body-sm text-body-sm text-outline">08:30 WIB</div>
+</td>
+<td class="py-4 px-4">
+<div class="relative inline-block">
+<select class="appearance-none font-label-md text-label-md font-semibold px-3 py-1 pr-7 rounded-full bg-surface-container text-tertiary cursor-pointer focus:outline-none focus:ring-1 focus:ring-tertiary" onchange="updateStatusPill(this)">
+<option value="Attended">Attended</option>
+<option selected="" value="Registered">Registered</option>
+<option value="Absent">Absent</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-[14px] text-tertiary pointer-events-none">arrow_drop_down</span>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg text-outline hover:text-primary hover:bg-surface-container-high transition-all" onclick="previewParticipant('Dimas Nugroho', '21017409', 'Fakultas MIPA', 'dimas.n@ui.ac.id', 'Registered', 'On-site', '18 Okt 2025, 08:30 WIB', '#TCK-9182')" title="Detail Peserta">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg text-outline hover:text-tertiary hover:bg-surface-container-high transition-all" onclick="resendTicket('Dimas Nugroho')" title="Kirim Ulang E-Ticket">
+<span class="material-symbols-outlined text-[18px]">outgoing_mail</span>
+</button>
+<button class="p-1.5 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container-high transition-all" title="Menu Lainnya">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Jessica Tanuwijaya -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group" data-name="Jessica Tanuwijaya" data-nim="23019904" data-status="Attended">
+<td class="py-4 px-4 text-center">
+<input class="rounded accent-primary cursor-pointer w-4 h-4" type="checkbox"/>
+</td>
+<td class="py-4 px-4 font-label-md text-label-md text-outline">04</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm bg-surface-container" data-alt="Portrait of Indonesian young Asian female economics university student smiling in modern campus co-working space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnF1mdWUHtLlI3zXUfy7c_lcEAYkEKL0Z_x_rPDJRrjd6X8rsbs3yMuzjs36sz5xVXEna7RxhVzzcZI-K8_TiLUo4OggaJuqV9H1e9qcTIyheTIeQS4rmDkkkWpTYgqH6pZZI81PHCyeOptfPDzL40CsJxBXM2KyJRMje6VqAA95iALyRizo76ACiNVumVQWcAp2uGsIcnhc8XCG22wr9TVyWbXcG_nOtNXK_xdRj-"/>
+<div>
+<div class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors font-semibold">Jessica Tanuwijaya</div>
+<div class="font-body-sm text-body-sm text-outline flex items-center gap-1.5">
+<span>NIM 23019904</span>
+<span>•</span>
+<span class="inline-flex items-center text-emerald-600 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] mr-0.5">verified_user</span> KTM OK
+                    </span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="text-on-surface font-medium">jessica.tan@ui.ac.id</div>
+<div class="font-label-sm text-label-sm text-outline">Fakultas Ekonomi &amp; Bisnis (FEB)</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-purple-100 text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">videocam</span> Virtual Zoom
+              </span>
+</td>
+<td class="py-4 px-4">
+<div class="font-medium text-on-surface">17 Okt 2025</div>
+<div class="font-body-sm text-body-sm text-outline">21:00 WIB</div>
+</td>
+<td class="py-4 px-4">
+<div class="relative inline-block">
+<select class="appearance-none font-label-md text-label-md font-semibold px-3 py-1 pr-7 rounded-full bg-emerald-100 text-emerald-800 cursor-pointer focus:outline-none focus:ring-1 focus:ring-emerald-400" onchange="updateStatusPill(this)">
+<option selected="" value="Attended">Attended</option>
+<option value="Registered">Registered</option>
+<option value="Absent">Absent</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-[14px] text-emerald-800 pointer-events-none">arrow_drop_down</span>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg text-outline hover:text-primary hover:bg-surface-container-high transition-all" onclick="previewParticipant('Jessica Tanuwijaya', '23019904', 'Fakultas Ekonomi &amp; Bisnis', 'jessica.tan@ui.ac.id', 'Attended', 'Virtual Zoom', '17 Okt 2025, 21:00 WIB', '#TCK-1102')" title="Detail Peserta">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg text-outline hover:text-tertiary hover:bg-surface-container-high transition-all" onclick="resendTicket('Jessica Tanuwijaya')" title="Kirim Ulang E-Ticket">
+<span class="material-symbols-outlined text-[18px]">outgoing_mail</span>
+</button>
+<button class="p-1.5 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container-high transition-all" title="Menu Lainnya">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Farhan Maulana -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group" data-name="Farhan Maulana" data-nim="22016553" data-status="Absent">
+<td class="py-4 px-4 text-center">
+<input class="rounded accent-primary cursor-pointer w-4 h-4" type="checkbox"/>
+</td>
+<td class="py-4 px-4 font-label-md text-label-md text-outline">05</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-rose-100 text-rose-700 flex items-center justify-center font-bold text-sm shadow-sm">
+                  FM
+                </div>
+<div>
+<div class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors font-semibold">Farhan Maulana</div>
+<div class="font-body-sm text-body-sm text-outline flex items-center gap-1.5">
+<span>NIM 22016553</span>
+<span>•</span>
+<span class="inline-flex items-center text-error font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] mr-0.5">report</span> No Show
+                    </span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="text-on-surface font-medium">farhan.m@ui.ac.id</div>
+<div class="font-label-sm text-label-sm text-outline">Fakultas Ilmu Administrasi (FIA)</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">apartment</span> On-site
+              </span>
+</td>
+<td class="py-4 px-4">
+<div class="font-medium text-on-surface">18 Okt 2025</div>
+<div class="font-body-sm text-body-sm text-outline">09:00 WIB</div>
+</td>
+<td class="py-4 px-4">
+<div class="relative inline-block">
+<select class="appearance-none font-label-md text-label-md font-semibold px-3 py-1 pr-7 rounded-full bg-rose-100 text-rose-800 cursor-pointer focus:outline-none focus:ring-1 focus:ring-rose-400" onchange="updateStatusPill(this)">
+<option value="Attended">Attended</option>
+<option value="Registered">Registered</option>
+<option selected="" value="Absent">Absent</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-[14px] text-rose-800 pointer-events-none">arrow_drop_down</span>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg text-outline hover:text-primary hover:bg-surface-container-high transition-all" onclick="previewParticipant('Farhan Maulana', '22016553', 'Fakultas Ilmu Administrasi', 'farhan.m@ui.ac.id', 'Absent', 'On-site', '18 Okt 2025, 09:00 WIB', '#TCK-7714')" title="Detail Peserta">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg text-outline hover:text-tertiary hover:bg-surface-container-high transition-all" onclick="resendTicket('Farhan Maulana')" title="Kirim Ulang E-Ticket">
+<span class="material-symbols-outlined text-[18px]">outgoing_mail</span>
+</button>
+<button class="p-1.5 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container-high transition-all" title="Menu Lainnya">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Empty State View (Toggled via JS) -->
+<div class="hidden py-16 px-4 text-center" id="emptyStateView">
+<div class="w-16 h-16 rounded-full bg-surface-container-high text-outline flex items-center justify-center mx-auto mb-4">
+<span class="material-symbols-outlined text-[32px]">person_search</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Data Peserta Tidak Ditemukan</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mx-auto mt-1 mb-6">
+        Tidak ada pendaftar yang cocok dengan kata kunci pencarian Anda. Coba periksa kembali ejaan NIM atau nama peserta.
+      </p>
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md hover:bg-on-primary-fixed-variant transition-all" onclick="resetSearch()">
+<span class="material-symbols-outlined text-[18px]">restart_alt</span>
+<span>Reset Pencarian</span>
+</button>
+</div>
+<!-- Table Pagination & Footer Bar -->
+<div class="px-space-md py-3.5 bg-surface-container-lowest flex flex-col sm:flex-row items-center justify-between gap-3" id="paginationBar">
+<div class="font-body-sm text-body-sm text-outline">
+        Menampilkan <span class="font-semibold text-on-surface" id="showingCountText">1–5</span> dari <span class="font-semibold text-on-surface">400</span> peserta terdaftar
+      </div>
+<!-- Pagination Navigation Buttons -->
+<div class="flex items-center gap-1">
+<button class="px-3 py-1.5 rounded-xl font-label-md text-label-md text-outline hover:bg-surface-container-low transition-all disabled:opacity-40" disabled="">
+          Sebelumnya
+        </button>
+<button class="w-8 h-8 rounded-xl font-label-md text-label-md bg-primary text-on-primary shadow-sm">1</button>
+<button class="w-8 h-8 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low transition-all">2</button>
+<button class="w-8 h-8 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low transition-all">3</button>
+<span class="px-1 text-outline">...</span>
+<button class="w-8 h-8 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low transition-all">80</button>
+<button class="px-3 py-1.5 rounded-xl font-label-md text-label-md text-primary hover:bg-surface-container-low transition-all font-semibold">
+          Selanjutnya
+        </button>
+</div>
+</div>
+</div>
+<!-- Bottom Quick Operations Banner / SKPI Sync Alert -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-2xl bg-primary-fixed text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">school</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Integrasi Poin SKPI Kemahasiswaan Terbuka</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          342 peserta berstatus <span class="font-semibold text-emerald-600">Attended</span> siap dikirim ke database Rektorat untuk penerbitan 4.0 Poin SKPI.
+        </p>
+</div>
+</div>
+<div class="flex items-center gap-2 self-stretch md:self-auto justify-end">
+<button class="w-full md:w-auto px-4 py-2.5 rounded-xl bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary transition-all font-label-lg text-label-lg flex items-center justify-center gap-2" onclick="syncSKPI()">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+<span>Sinkronisasi ke Rektorat</span>
+</button>
+</div>
+</div>
+<!-- MODAL 1: Detail Peserta & Tiket SKPI (Drawer / Popup) -->
+<div class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm hidden flex items-center justify-center p-4" id="detailModal">
+<div class="bg-surface-container-lowest rounded-2xl max-w-lg w-full shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+<!-- Modal Header -->
+<div class="p-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">badge</span>
+<h3 class="font-title-md text-title-md text-on-surface">Detail Peserta &amp; E-Ticket SKPI</h3>
+</div>
+<button class="w-8 h-8 rounded-full hover:bg-surface-container-high flex items-center justify-center text-outline hover:text-on-surface" onclick="closeModal('detailModal')">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Modal Body -->
+<div class="p-space-md space-y-4">
+<!-- Participant Card Header -->
+<div class="flex items-start gap-4 p-3.5 rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="w-14 h-14 rounded-2xl bg-primary text-on-primary font-headline-sm flex items-center justify-center shrink-0">
+            AR
+          </div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<h4 class="font-title-md text-title-md text-on-surface font-bold truncate" id="modalName">Ahmad Rizky Pratama</h4>
+<span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-100 text-emerald-800" id="modalStatusBadge">Attended</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline" id="modalNim">NIM 22019482</p>
+<p class="font-label-sm text-label-sm text-primary font-medium" id="modalFaculty">Fakultas Ilmu Komputer</p>
+</div>
+</div>
+<!-- Ticket & SKPI Metadata Grid -->
+<div class="grid grid-cols-2 gap-3 text-body-sm">
+<div class="p-3 rounded-xl bg-surface-container-low">
+<span class="text-outline block text-[11px] uppercase tracking-wider font-semibold">Kode Tiket QR</span>
+<span class="font-title-md text-title-md font-mono text-primary font-bold" id="modalTicketCode">#TCK-4819</span>
+<span class="block text-[11px] text-emerald-600 mt-0.5">Sudah check-in gate</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low">
+<span class="text-outline block text-[11px] uppercase tracking-wider font-semibold">Bobot SKPI</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">4.0 Poin</span>
+<span class="block text-[11px] text-primary mt-0.5">Kategori: Prestasi &amp; Tekno</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low">
+<span class="text-outline block text-[11px] uppercase tracking-wider font-semibold">Jalur Pendaftaran</span>
+<span class="font-title-md text-title-md text-on-surface font-medium" id="modalTrack">Hybrid / On-site</span>
+<span class="block text-[11px] text-outline mt-0.5">Auditorium Fasilkom</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low">
+<span class="text-outline block text-[11px] uppercase tracking-wider font-semibold">Waktu Check-in Tap</span>
+<span class="font-title-md text-title-md text-on-surface font-medium" id="modalCheckinTime">18 Okt, 08:15 WIB</span>
+<span class="block text-[11px] text-outline mt-0.5">Gerbang Gate B2</span>
+</div>
+</div>
+<!-- Verification Status Pill & KTM Check -->
+<div class="p-3 rounded-xl bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">id_card</span>
+<div class="text-left">
+<span class="font-label-md text-label-md text-on-surface block font-semibold">KTM Mahasiswa Terverifikasi</span>
+<span class="text-[11px] text-outline">Terhubung ke SIAK NG Kampus</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-emerald-600 text-[20px]">check_circle</span>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="p-space-md bg-surface-container-low/50 flex items-center justify-between gap-2">
+<button class="px-3.5 py-2 rounded-xl bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all flex items-center gap-1.5 shadow-sm" onclick="printBadge()">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span>Cetak ID Badge</span>
+</button>
+<div class="flex items-center gap-2">
+<button class="px-4 py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md hover:bg-on-primary-fixed-variant transition-all" onclick="closeModal('detailModal')">
+            Tutup Pratinjau
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- MODAL 2: Scan QR Presensi Fast Viewfinder -->
+<div class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4" id="qrScannerModal">
+<div class="bg-surface-container-lowest rounded-2xl max-w-md w-full shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+<div class="p-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">qr_code_scanner</span>
+<h3 class="font-title-md text-title-md text-on-surface">Validasi Tiket Presensi</h3>
+</div>
+<button class="w-8 h-8 rounded-full hover:bg-surface-container-high flex items-center justify-center text-outline hover:text-on-surface" onclick="closeModal('qrScannerModal')">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-space-md text-center">
+<!-- Interactive Viewfinder Visual -->
+<div class="relative w-64 h-64 mx-auto bg-inverse-surface rounded-2xl overflow-hidden flex items-center justify-center shadow-inner">
+<!-- Neon Corner Guides -->
+<div class="absolute top-4 left-4 w-8 h-8 border-t-4 border-l-4 border-primary-container rounded-tl-lg"></div>
+<div class="absolute top-4 right-4 w-8 h-8 border-t-4 border-r-4 border-primary-container rounded-tr-lg"></div>
+<div class="absolute bottom-4 left-4 w-8 h-8 border-b-4 border-l-4 border-primary-container rounded-bl-lg"></div>
+<div class="absolute bottom-4 right-4 w-8 h-8 border-b-4 border-r-4 border-primary-container rounded-br-lg"></div>
+<!-- Animated Laser Scanning Line -->
+<div class="absolute inset-x-4 h-0.5 bg-gradient-to-r from-transparent via-primary-container to-transparent shadow-[0_0_12px_#7048E8] animate-pulse"></div>
+<!-- Central QR Icon Placeholder -->
+<span class="material-symbols-outlined text-surface-variant text-[72px] opacity-40">qr_code_2</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4">
+          Arahkan kamera ke QR Code pada E-Ticket Mahasiswa (Aplikasi EVENT.KITA atau PDF Tiket).
+        </p>
+<!-- Fast Scan Simulator Action -->
+<button class="mt-4 w-full py-2.5 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg hover:bg-on-primary-fixed-variant transition-all shadow-md" onclick="simulateScanSuccess()">
+          Simulasikan Scan Berhasil (Check-In)
+        </button>
+</div>
+</div>
+</div>
+<!-- MODAL 3: Tambah Peserta Manual -->
+<div class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4" id="addParticipantModal">
+<div class="bg-surface-container-lowest rounded-2xl max-w-md w-full shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+<div class="p-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">person_add</span>
+<h3 class="font-title-md text-title-md text-on-surface">Tambah Peserta Manual</h3>
+</div>
+<button class="w-8 h-8 rounded-full hover:bg-surface-container-high flex items-center justify-center text-outline hover:text-on-surface" onclick="closeModal('addParticipantModal')">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<form class="p-space-md space-y-3" onsubmit="handleManualAdd(event)">
+<div>
+<label class="block font-label-sm text-label-sm text-outline uppercase tracking-wider mb-1">Nama Lengkap</label>
+<input class="w-full bg-surface-container-low py-2 px-3 rounded-xl font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Contoh: Budi Santoso" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-outline uppercase tracking-wider mb-1">NIM Mahasiswa</label>
+<input class="w-full bg-surface-container-low py-2 px-3 rounded-xl font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Contoh: 22019888" required="" type="number"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-outline uppercase tracking-wider mb-1">Email Kampus (@ui.ac.id)</label>
+<input class="w-full bg-surface-container-low py-2 px-3 rounded-xl font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="nama.depan@ui.ac.id" required="" type="email"/>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<div>
+<label class="block font-label-sm text-label-sm text-outline uppercase tracking-wider mb-1">Fakultas</label>
+<select class="w-full bg-surface-container-low py-2 px-2.5 rounded-xl font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20">
+<option>Fasilkom</option>
+<option>FT</option>
+<option>MIPA</option>
+<option>FEB</option>
+<option>FIA</option>
+<option>Lainnya</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-outline uppercase tracking-wider mb-1">Jalur Hadir</label>
+<select class="w-full bg-surface-container-low py-2 px-2.5 rounded-xl font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20">
+<option>On-site</option>
+<option>Hybrid</option>
+<option>Virtual Zoom</option>
+</select>
+</div>
+</div>
+<div class="pt-3 flex items-center justify-end gap-2">
+<button class="px-4 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low font-label-md text-label-md" onclick="closeModal('addParticipantModal')" type="button">
+            Batal
+          </button>
+<button class="px-4 py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md hover:bg-on-primary-fixed-variant transition-all" type="submit">
+            Simpan &amp; Buat E-Ticket
+          </button>
+</div>
+</form>
+</div>
+</div>
+<!-- Notification Toast Container -->
+<div class="fixed bottom-6 right-6 z-50 bg-inverse-surface text-inverse-on-surface px-4 py-3 rounded-xl shadow-xl flex items-center gap-2.5 hidden animate-in slide-in-from-bottom-5 duration-200" id="toastNotification">
+<span class="material-symbols-outlined text-emerald-400 text-[20px]" id="toastIcon">check_circle</span>
+<span class="font-body-md text-body-md" id="toastMessage">Aksi berhasil dilakukan.</span>
+</div>
+</div>
+<script>
+  // Utility: Modal Handler
+  function openModal(id) {
+    document.getElementById(id).classList.remove('hidden');
+  }
+
+  function closeModal(id) {
+    document.getElementById(id).classList.add('hidden');
+  }
+
+  // Toast Handler
+  function showToast(msg, icon = 'check_circle') {
+    const toast = document.getElementById('toastNotification');
+    const msgEl = document.getElementById('toastMessage');
+    const iconEl = document.getElementById('toastIcon');
+    msgEl.textContent = msg;
+    iconEl.textContent = icon;
+    toast.classList.remove('hidden');
+    setTimeout(() => {
+      toast.classList.add('hidden');
+    }, 3000);
+  }
+
+  // State Switcher (Simulator)
+  function switchState(state) {
+    const rows = document.querySelectorAll('#tableBody tr');
+    const emptyState = document.getElementById('emptyStateView');
+    const pagination = document.getElementById('paginationBar');
+    const searchInput = document.getElementById('mainSearchInput');
+    const filterIndicator = document.getElementById('tableFilterIndicator');
+    const clearBtn = document.getElementById('clearSearchBtn');
+
+    // Reset button pills style
+    ['normal', 'searched', 'empty'].forEach(s => {
+      const btn = document.getElementById('btn-state-' + s);
+      if (btn) {
+        btn.className = "px-3 py-1.5 rounded-xl font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high transition-all";
+      }
+    });
+
+    const activeBtn = document.getElementById('btn-state-' + state);
+    if (activeBtn) {
+      activeBtn.className = "px-3 py-1.5 rounded-xl font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all";
+    }
+
+    if (state === 'normal') {
+      rows.forEach(r => r.style.display = '');
+      emptyState.classList.add('hidden');
+      pagination.classList.remove('hidden');
+      searchInput.value = '';
+      clearBtn.classList.add('hidden');
+      filterIndicator.textContent = "Semua Peserta (400)";
+      document.getElementById('showingCountText').textContent = "1–5";
+    } 
+    else if (state === 'searched') {
+      // Show only 1 matching student (Jessica Tanuwijaya)
+      rows.forEach((r, idx) => {
+        if (idx === 3) {
+          r.style.display = '';
+        } else {
+          r.style.display = 'none';
+        }
+      });
+      emptyState.classList.add('hidden');
+      pagination.classList.remove('hidden');
+      searchInput.value = 'Jessica Tanuwijaya';
+      clearBtn.classList.remove('hidden');
+      filterIndicator.textContent = "Hasil: 1 Peserta ditemukan";
+      document.getElementById('showingCountText').textContent = "1 dari 1";
+    } 
+    else if (state === 'empty') {
+      rows.forEach(r => r.style.display = 'none');
+      emptyState.classList.remove('hidden');
+      pagination.classList.add('hidden');
+      searchInput.value = 'Mahasiswa Tidak Terdaftar 99999';
+      clearBtn.classList.remove('hidden');
+      filterIndicator.textContent = "Tidak ada hasil";
+    }
+  }
+
+  // Filter Table by Status Pills
+  function filterStatus(status) {
+    const rows = document.querySelectorAll('#tableBody tr');
+    const pills = ['all', 'attended', 'registered', 'absent'];
+    
+    // Update active pill UI
+    pills.forEach(p => {
+      const pillEl = document.getElementById('filter-pill-' + p);
+      if (pillEl) {
+        pillEl.className = "px-3.5 py-1.5 rounded-xl font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-all flex items-center gap-1.5 whitespace-nowrap";
+      }
+    });
+
+    const currentPill = document.getElementById('filter-pill-' + status.toLowerCase());
+    if (currentPill) {
+      currentPill.className = "px-3.5 py-1.5 rounded-xl font-label-md text-label-md bg-primary-container text-on-primary-container shadow-sm transition-all flex items-center gap-1.5 whitespace-nowrap";
+    }
+
+    let matchCount = 0;
+    rows.forEach(r => {
+      const rowStatus = r.getAttribute('data-status');
+      if (status === 'ALL' || rowStatus === status) {
+        r.style.display = '';
+        matchCount++;
+      } else {
+        r.style.display = 'none';
+      }
+    });
+
+    const filterIndicator = document.getElementById('tableFilterIndicator');
+    filterIndicator.textContent = status === 'ALL' ? 'Semua Peserta (400)' : `Filter: ${status} (${matchCount} Peserta)`;
+  }
+
+  // Search Input Filter
+  function handleSearchInput(e) {
+    const term = e.target.value.toLowerCase().trim();
+    const clearBtn = document.getElementById('clearSearchBtn');
+    const rows = document.querySelectorAll('#tableBody tr');
+    const emptyState = document.getElementById('emptyStateView');
+    const pagination = document.getElementById('paginationBar');
+
+    if (term.length > 0) {
+      clearBtn.classList.remove('hidden');
+    } else {
+      clearBtn.classList.add('hidden');
+    }
+
+    let found = 0;
+    rows.forEach(r => {
+      const name = r.getAttribute('data-name')?.toLowerCase() || '';
+      const nim = r.getAttribute('data-nim') || '';
+      if (name.includes(term) || nim.includes(term)) {
+        r.style.display = '';
+        found++;
+      } else {
+        r.style.display = 'none';
+      }
+    });
+
+    if (found === 0) {
+      emptyState.classList.remove('hidden');
+      pagination.classList.add('hidden');
+    } else {
+      emptyState.classList.add('hidden');
+      pagination.classList.remove('hidden');
+      document.getElementById('showingCountText').textContent = `1–${found}`;
+    }
+  }
+
+  function clearSearch() {
+    document.getElementById('mainSearchInput').value = '';
+    switchState('normal');
+  }
+
+  function resetSearch() {
+    clearSearch();
+  }
+
+  // Dropdown Presensi update pill live visual
+  function updateStatusPill(selectEl) {
+    const val = selectEl.value;
+    const row = selectEl.closest('tr');
+    row.setAttribute('data-status', val);
+
+    if (val === 'Attended') {
+      selectEl.className = "appearance-none font-label-md text-label-md font-semibold px-3 py-1 pr-7 rounded-full bg-emerald-100 text-emerald-800 cursor-pointer focus:outline-none";
+      showToast(`Status ${row.getAttribute('data-name')} diubah ke Attended`);
+    } else if (val === 'Registered') {
+      selectEl.className = "appearance-none font-label-md text-label-md font-semibold px-3 py-1 pr-7 rounded-full bg-surface-container text-tertiary cursor-pointer focus:outline-none";
+      showToast(`Status ${row.getAttribute('data-name')} diubah ke Registered`);
+    } else if (val === 'Absent') {
+      selectEl.className = "appearance-none font-label-md text-label-md font-semibold px-3 py-1 pr-7 rounded-full bg-rose-100 text-rose-800 cursor-pointer focus:outline-none";
+      showToast(`Status ${row.getAttribute('data-name')} diubah ke Absent`, 'warning');
+    }
+  }
+
+  // Resend E-Ticket Action
+  function resendTicket(name) {
+    showToast(`E-Ticket & QR Code berhasil dikirimkan ulang ke email ${name}!`, 'forward_to_inbox');
+  }
+
+  // Preview Participant Detail Modal
+  function previewParticipant(name, nim, faculty, email, status, track, checkin, ticketCode) {
+    document.getElementById('modalName').textContent = name;
+    document.getElementById('modalNim').textContent = `NIM ${nim}`;
+    document.getElementById('modalFaculty').textContent = faculty;
+    document.getElementById('modalTicketCode').textContent = ticketCode;
+    document.getElementById('modalTrack').textContent = track;
+    document.getElementById('modalCheckinTime').textContent = checkin;
+    
+    const badge = document.getElementById('modalStatusBadge');
+    badge.textContent = status;
+    if (status === 'Attended') {
+      badge.className = "px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-100 text-emerald-800";
+    } else if (status === 'Registered') {
+      badge.className = "px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-surface-container text-tertiary";
+    } else {
+      badge.className = "px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-rose-100 text-rose-800";
+    }
+
+    openModal('detailModal');
+  }
+
+  // Export CSV Simulated
+  function exportCSV() {
+    showToast("Mengunduh data pendaftar format CSV/Excel...", "downloading");
+    setTimeout(() => {
+      showToast("Berhasil mengekspor 400 data pendaftar event.", "file_download_done");
+    }, 1200);
+  }
+
+  // Sync SKPI
+  function syncSKPI() {
+    showToast("Menghubungkan ke API Rektorat & Siak-NG...", "sync");
+    setTimeout(() => {
+      showToast("342 Mahasiswa (Attended) berhasil disinkronkan ke 4.0 Poin SKPI!", "verified");
+    }, 1500);
+  }
+
+  // Simulate Scan QR Success
+  function simulateScanSuccess() {
+    closeModal('qrScannerModal');
+    showToast("Scan Berhasil: Dimas Nugroho (21017409) telah Check-In!", "check_circle");
+    
+    // Auto update Dimas row if available
+    const dimasRow = document.querySelector('[data-name="Dimas Nugroho"]');
+    if (dimasRow) {
+      const select = dimasRow.querySelector('select');
+      if (select) {
+        select.value = 'Attended';
+        updateStatusPill(select);
+      }
+    }
+  }
+
+  // Manual Add Form Handler
+  function handleManualAdd(e) {
+    e.preventDefault();
+    closeModal('addParticipantModal');
+    showToast("Peserta manual berhasil ditambahkan dan tiket telah terbit!", "person_add");
+  }
+
+  function printBadge() {
+    window.print();
+  }
+
+  function changeEvent(eventName) {
+    showToast(`Memuat data peserta untuk event: ${eventName}`, "refresh");
+  }
+</script></main></div></body></html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_blank" name="shell-type"/><title>EVENT.KITA - Authentication</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-lowest":"#ffffff","surface-container":"#e5eeff","on-surface":"#0b1c30","on-primary-fixed-variant":"#4d17c5","surface-container-highest":"#d3e4fe","background":"#f8f9ff","surface-container-high":"#dce9ff","on-secondary-container":"#2f088f","on-secondary-fixed-variant":"#482fa7","surface-variant":"#d3e4fe","primary-container":"#7048e8","on-tertiary-fixed":"#00164e","secondary-fixed":"#e6deff","on-secondary-fixed":"#1c0062","tertiary-fixed":"#dce1ff","on-tertiary":"#ffffff","secondary-container":"#9984fd","on-tertiary-fixed-variant":"#003baf","inverse-surface":"#213145","surface-dim":"#cbdbf5","tertiary-container":"#365fd7","outline":"#7a7486","on-error":"#ffffff","outline-variant":"#cac3d7","surface-tint":"#663cdd","tertiary":"#0f45be","primary-fixed-dim":"#ccbdff","error-container":"#ffdad6","error":"#ba1a1a","on-secondary":"#ffffff","inverse-primary":"#ccbdff","on-primary":"#ffffff","on-primary-container":"#ede4ff","on-primary-fixed":"#1f005f","secondary":"#604ac1","inverse-on-surface":"#eaf1ff","surface-bright":"#f8f9ff","on-error-container":"#93000a","primary":"#5728cf","on-surface-variant":"#494455","primary-fixed":"#e7deff","secondary-fixed-dim":"#cabeff","on-background":"#0b1c30","tertiary-fixed-dim":"#b6c4ff","surface":"#f8f9ff","on-tertiary-container":"#e4e7ff","surface-container-low":"#eff4ff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-mobile":"1rem","space-xs":"0.25rem","gutter-mobile":"1rem","space-xl":"2.5rem","space-lg":"1.5rem","space-md":"1rem","space-sm":"0.5rem","gutter":"1.5rem","margin":"2rem"},"fontFamily":{"headline-lg":["Plus Jakarta Sans"],"label-md":["Inter"],"body-md":["Inter"],"headline-md":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"label-sm":["Inter"],"title-md":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-display":["Plus Jakarta Sans"],"label-lg":["Inter"],"body-lg":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-display-mobile":["Plus Jakarta Sans"]},"fontSize":{"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","fontWeight":"500"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"headline-display":["44px",{"lineHeight":"52px","fontWeight":"800"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"26px","fontWeight":"400"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","fontWeight":"700"}],"headline-display-mobile":["32px",{"lineHeight":"40px","fontWeight":"800"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><main class="w-full min-h-screen bg-background flex flex-col justify-center items-center p-gutter-mobile md:p-gutter"><div class="flex flex-col w-full items-center justify-center relative overflow-hidden py-space-md">
+<!-- Ambient Atmospheric Blurred Orbs -->
+<div class="absolute -top-32 -left-20 w-96 h-96 rounded-full bg-primary-container/20 blur-3xl pointer-events-none transform -rotate-12"></div>
+<div class="absolute -bottom-24 -right-24 w-80 h-80 rounded-full bg-tertiary-container/25 blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/2 left-1/3 w-64 h-64 rounded-full bg-secondary-container/15 blur-2xl pointer-events-none"></div>
+<!-- Decorative Minimalist Corner Elements -->
+<div class="hidden lg:block absolute top-10 right-12 text-outline-variant/40 font-label-sm uppercase tracking-widest pointer-events-none select-none">
+    SECURE CAMPUS SSO • V2.4.9
+  </div>
+<div class="hidden lg:block absolute bottom-8 left-12 text-outline-variant/50 font-label-sm tracking-wider pointer-events-none select-none">
+    HUBUNGAN MAHASISWA • BIRO KEMAHASISWAAN
+  </div>
+<!-- Main Dual Card Container -->
+<div class="w-full max-w-xl relative z-10 flex flex-col items-center">
+<!-- Branding Header with Provided Logo -->
+<header class="flex flex-col items-center mb-6 text-center">
+<div class="flex items-center justify-center p-2 rounded-xl transition-transform hover:scale-[1.02] duration-200">
+<img alt="EVENT.KITA Logo" class="h-14 sm:h-16 w-auto object-contain drop-shadow-sm" src="https://lh3.googleusercontent.com/aida/ALJJyrA5dgWpmXlUweALvYdAQvjg6CPGyT6yBk6gMBMlXa8XPRN7MadhfAmS2DNT7bNIjvUC8CvGy4rfffl6E7zf4eQwZBriovYKqSv9ehOmngFrx9BwqSlX8MyUEhFSlH3eq4S9_IyfTn91RqZFjYjxZ6G4R0faEC-yVUnAm8V4AEbhoUzLJflqt4HvWKPU1gK_45sjPYOrW6ZXBKgAoIzyqftBgTIaaftyBPPeeJrG9YHiXQ"/>
+</div>
+<p class="font-body-sm text-on-surface-variant mt-1.5 flex items-center gap-1.5">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+        Satu portal untuk seluruh dinamika, kompetisi, dan seminar kampus.
+      </p>
+</header>
+<!-- Interactive Interactive Feedback Notification Banners -->
+<div class="w-full mb-4 transition-all duration-300 hidden" id="feedback-alert">
+<!-- Error Alert State -->
+<div class="hidden flex items-center justify-between p-3.5 rounded-xl bg-error-container text-on-error-container shadow-sm" id="alert-error">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-error text-[20px]">error</span>
+<span class="font-label-md">Kredensial tidak valid. Periksa kembali email kampus dan password Anda.</span>
+</div>
+<button class="p-1 hover:opacity-75 transition-opacity" onclick="dismissAlert()" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Success Alert State -->
+<div class="hidden flex items-center justify-between p-3.5 rounded-xl bg-surface-container text-on-secondary-container shadow-sm" id="alert-success">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary-container text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-md">Registrasi Berhasil! Cek email verifikasi akun @univ.ac.id Anda.</span>
+</div>
+<button class="p-1 hover:opacity-75 transition-opacity" onclick="dismissAlert()" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Central Authentication Surface Card -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-xl overflow-hidden">
+<!-- Top Primary Segmented Mode Switcher (Masuk vs Daftar) -->
+<div class="p-1.5 bg-surface-container-low flex items-center m-3 rounded-lg">
+<button class="flex-1 py-2.5 rounded-md font-label-lg text-primary bg-surface-container-lowest shadow-sm flex items-center justify-center gap-2 transition-all duration-150" id="tab-login" onclick="switchTab('login')" type="button">
+<span class="material-symbols-outlined text-[18px]">login</span>
+          Masuk / Login
+        </button>
+<button class="flex-1 py-2.5 rounded-md font-label-lg text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-2 transition-all duration-150" id="tab-register" onclick="switchTab('register')" type="button">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+          Daftar Akun / Register
+        </button>
+</div>
+<div class="px-6 py-5 sm:px-8 sm:py-6">
+<!-- Role Selector Pill Bar -->
+<div class="mb-5">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-on-surface-variant uppercase tracking-wider">Peran Pengguna</span>
+<span class="font-label-sm text-primary" id="role-hint">Akses Penuh Mahasiswa</span>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<button class="role-pill py-2 px-2.5 rounded-lg font-label-md flex flex-col sm:flex-row items-center justify-center gap-1.5 bg-primary-fixed text-primary transition-all shadow-sm" id="role-btn-mahasiswa" onclick="setRole('mahasiswa')" type="button">
+<span class="material-symbols-outlined text-[18px]">school</span>
+<span>Mahasiswa</span>
+</button>
+<button class="role-pill py-2 px-2.5 rounded-lg font-label-md flex flex-col sm:flex-row items-center justify-center gap-1.5 bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" id="role-btn-panitia" onclick="setRole('panitia')" type="button">
+<span class="material-symbols-outlined text-[18px]">campaign</span>
+<span>Panitia Event</span>
+</button>
+<button class="role-pill py-2 px-2.5 rounded-lg font-label-md flex flex-col sm:flex-row items-center justify-center gap-1.5 bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" id="role-btn-admin" onclick="setRole('admin')" type="button">
+<span class="material-symbols-outlined text-[18px]">admin_panel_settings</span>
+<span>Admin Kampus</span>
+</button>
+</div>
+</div>
+<!-- ==================== FORM: LOGIN ==================== -->
+<form class="flex flex-col space-y-4" id="form-login" onsubmit="handleAuthSubmit(event, 'login')">
+<!-- Input Email -->
+<div class="flex flex-col space-y-1">
+<label class="font-label-md text-on-surface" for="login-email">Email Kampus / Akun SSO</label>
+<div class="relative flex items-center">
+<span class="absolute left-3.5 text-on-surface-variant pointer-events-none material-symbols-outlined text-[20px]">alternate_email</span>
+<input class="w-full h-11 pl-11 pr-4 bg-surface-container-lowest text-on-surface placeholder:text-outline-variant font-body-md rounded-xl outline-none shadow-sm focus:bg-surface-container-lowest transition-all" id="login-email" onblur="this.style.boxShadow='0 0 0 1px #d3e4fe'" onfocus="this.style.boxShadow='0 0 0 2px #7048e8'" placeholder="nama@univ.ac.id" required="" style="box-shadow: 0 0 0 1px #d3e4fe;" type="email"/>
+</div>
+</div>
+<!-- Input Password -->
+<div class="flex flex-col space-y-1">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-on-surface" for="login-pass">Kata Sandi</label>
+<a class="font-label-sm text-primary hover:text-on-primary-fixed-variant transition-colors" href="javascript:void(0)" onclick="triggerForgotDemo()">
+                Lupa Password?
+              </a>
+</div>
+<div class="relative flex items-center">
+<span class="absolute left-3.5 text-on-surface-variant pointer-events-none material-symbols-outlined text-[20px]">lock</span>
+<input class="w-full h-11 pl-11 pr-11 bg-surface-container-lowest text-on-surface placeholder:text-outline-variant font-body-md rounded-xl outline-none shadow-sm transition-all" id="login-pass" onblur="this.style.boxShadow='0 0 0 1px #d3e4fe'" onfocus="this.style.boxShadow='0 0 0 2px #7048e8'" placeholder="Masukkan kata sandi" required="" style="box-shadow: 0 0 0 1px #d3e4fe;" type="password"/>
+<button aria-label="Tampilkan atau sembunyikan kata sandi" class="absolute right-3.5 text-on-surface-variant hover:text-on-surface transition-colors p-1" onclick="togglePasswordVisibility('login-pass', 'eye-login')" type="button">
+<span class="material-symbols-outlined text-[20px]" id="eye-login">visibility</span>
+</button>
+</div>
+</div>
+<!-- Ingat Saya Checkbox -->
+<div class="flex items-center justify-between pt-1">
+<label class="flex items-center gap-2.5 cursor-pointer select-none">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-primary accent-primary-container cursor-pointer" id="remember-me" type="checkbox"/>
+<span class="font-body-sm text-on-surface-variant">Ingat sesi saya di perangkat ini</span>
+</label>
+</div>
+<!-- Submit Button -->
+<button class="w-full mt-2 h-11 bg-primary hover:bg-on-primary-fixed-variant text-on-primary font-label-lg rounded-xl shadow-md hover:shadow-lg flex items-center justify-center gap-2 transition-all active:scale-[0.99]" id="btn-login-submit" type="submit">
+<span class="flex items-center gap-1.5" id="login-text">
+<span>Masuk Sekarang</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</span>
+<div class="hidden flex items-center gap-2" id="login-spinner">
+<svg class="animate-spin h-5 w-5 text-on-primary" fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+<path class="opacity-75" d="M4 12a8 8 0 018-8v8H4z" fill="currentColor"></path>
+</svg>
+<span>Memverifikasi...</span>
+</div>
+</button>
+</form>
+<!-- ==================== FORM: REGISTER ==================== -->
+<form class="hidden flex flex-col space-y-3.5" id="form-register" onsubmit="handleAuthSubmit(event, 'register')">
+<!-- Nama Lengkap -->
+<div class="flex flex-col space-y-1">
+<label class="font-label-md text-on-surface" for="reg-name">Nama Lengkap</label>
+<div class="relative flex items-center">
+<span class="absolute left-3.5 text-on-surface-variant pointer-events-none material-symbols-outlined text-[20px]">badge</span>
+<input class="w-full h-10 pl-11 pr-4 bg-surface-container-lowest text-on-surface placeholder:text-outline-variant font-body-md rounded-xl outline-none shadow-sm transition-all" id="reg-name" onblur="this.style.boxShadow='0 0 0 1px #d3e4fe'" onfocus="this.style.boxShadow='0 0 0 2px #7048e8'" placeholder="Contoh: Raden Ayu Kartika" required="" style="box-shadow: 0 0 0 1px #d3e4fe;" type="text"/>
+</div>
+</div>
+<!-- Email Kampus -->
+<div class="flex flex-col space-y-1">
+<div class="flex justify-between items-center">
+<label class="font-label-md text-on-surface" for="reg-email">Email Kampus Terverifikasi</label>
+<span class="font-label-sm text-primary">Domain @*.ac.id</span>
+</div>
+<div class="relative flex items-center">
+<span class="absolute left-3.5 text-on-surface-variant pointer-events-none material-symbols-outlined text-[20px]">mail</span>
+<input class="w-full h-10 pl-11 pr-4 bg-surface-container-lowest text-on-surface placeholder:text-outline-variant font-body-md rounded-xl outline-none shadow-sm transition-all" id="reg-email" onblur="this.style.boxShadow='0 0 0 1px #d3e4fe'" onfocus="this.style.boxShadow='0 0 0 2px #7048e8'" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}\.ac\.id$|^[a-zA-Z0-9._%+-]+@univ\.ac\.id$" placeholder="nim_atau_nama@univ.ac.id" required="" style="box-shadow: 0 0 0 1px #d3e4fe;" title="Wajib menggunakan domain kampus berakhiran .ac.id" type="email"/>
+</div>
+</div>
+<!-- Password Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<div class="flex flex-col space-y-1">
+<label class="font-label-md text-on-surface" for="reg-pass">Kata Sandi</label>
+<div class="relative flex items-center">
+<input class="w-full h-10 px-3 bg-surface-container-lowest text-on-surface placeholder:text-outline-variant font-body-md rounded-xl outline-none shadow-sm transition-all" id="reg-pass" minlength="8" onblur="this.style.boxShadow='0 0 0 1px #d3e4fe'" onfocus="this.style.boxShadow='0 0 0 2px #7048e8'" placeholder="Min. 8 karakter" required="" style="box-shadow: 0 0 0 1px #d3e4fe;" type="password"/>
+</div>
+</div>
+<div class="flex flex-col space-y-1">
+<label class="font-label-md text-on-surface" for="reg-confirm">Konfirmasi Sandi</label>
+<div class="relative flex items-center">
+<input class="w-full h-10 px-3 bg-surface-container-lowest text-on-surface placeholder:text-outline-variant font-body-md rounded-xl outline-none shadow-sm transition-all" id="reg-confirm" minlength="8" onblur="this.style.boxShadow='0 0 0 1px #d3e4fe'" onfocus="this.style.boxShadow='0 0 0 2px #7048e8'" placeholder="Ulangi sandi" required="" style="box-shadow: 0 0 0 1px #d3e4fe;" type="password"/>
+</div>
+</div>
+</div>
+<!-- Checkbox Terms -->
+<div class="flex items-start gap-2.5 pt-1">
+<input class="w-4 h-4 mt-0.5 rounded text-primary-container focus:ring-primary accent-primary-container cursor-pointer" id="terms-check" required="" type="checkbox"/>
+<label class="font-body-sm text-on-surface-variant cursor-pointer" for="terms-check">
+              Saya menyetujui <a class="text-primary hover:underline font-label-sm" href="javascript:void(0)">Syarat &amp; Ketentuan</a> serta Kode Etik Keamanan Data Kampus EVENT.KITA.
+            </label>
+</div>
+<!-- Submit Button -->
+<button class="w-full mt-2 h-11 bg-primary hover:bg-on-primary-fixed-variant text-on-primary font-label-lg rounded-xl shadow-md hover:shadow-lg flex items-center justify-center gap-2 transition-all active:scale-[0.99]" id="btn-register-submit" type="submit">
+<span class="flex items-center gap-1.5" id="register-text">
+<span>Daftar Sekarang</span>
+<span class="material-symbols-outlined text-[18px]">how_to_reg</span>
+</span>
+<div class="hidden flex items-center gap-2" id="register-spinner">
+<svg class="animate-spin h-5 w-5 text-on-primary" fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+<path class="opacity-75" d="M4 12a8 8 0 018-8v8H4z" fill="currentColor"></path>
+</svg>
+<span>Memproses Akun...</span>
+</div>
+</button>
+</form>
+<!-- Quick Demo State Triggers (Validation Previews) -->
+<div class="mt-6 pt-4 border-t border-surface-container-high/60 flex flex-col items-center">
+<div class="flex items-center justify-center gap-2 mb-2">
+<span class="font-label-sm text-outline uppercase tracking-wider text-[10px]">Simulasi Respon Sistem:</span>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-2">
+<button class="px-2.5 py-1 rounded-md bg-error-container/60 hover:bg-error-container text-on-error-container font-label-sm text-[11px] transition-colors flex items-center gap-1" onclick="showSimulation('error')" type="button">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+              Simulasi Error
+            </button>
+<button class="px-2.5 py-1 rounded-md bg-surface-container hover:bg-surface-container-highest text-on-secondary-container font-label-sm text-[11px] transition-colors flex items-center gap-1" onclick="showSimulation('success')" type="button">
+<span class="material-symbols-outlined text-[14px]">done_all</span>
+              Simulasi Sukses
+            </button>
+<button class="px-2.5 py-1 rounded-md bg-secondary-fixed hover:bg-primary-fixed-dim text-on-secondary-fixed font-label-sm text-[11px] transition-colors flex items-center gap-1" onclick="showSimulation('loading')" type="button">
+<span class="material-symbols-outlined text-[14px]">sync</span>
+              Simulasi Loading
+            </button>
+</div>
+</div>
+</div>
+<!-- Trust & Institutional Footer Stripe -->
+<div class="px-6 py-3.5 bg-surface-container-low text-center flex items-center justify-center gap-2 text-on-surface-variant font-label-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+<span>Terintegrasi Resmi dengan Jaringan Akademik Mahasiswa Nasional</span>
+</div>
+</div>
+<!-- Micro Navigation & Help Meta -->
+<div class="flex items-center justify-between w-full mt-4 px-2 text-on-surface-variant font-body-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">lock</span>
+<span class="text-xs">Enkripsi SHA-256 Bit</span>
+</div>
+<a class="text-xs text-primary hover:underline flex items-center gap-1" href="javascript:void(0)" onclick="alert('Hubungi Helpdesk Kemahasiswaan via email: support@eventkita.univ.ac.id')">
+<span class="material-symbols-outlined text-[16px]">support_agent</span>
+        Bantuan Teknis
+      </a>
+</div>
+</div>
+<!-- Interactive Logic Script -->
+<script>
+    let currentRole = 'mahasiswa';
+    let currentTab = 'login';
+
+    function switchTab(tab) {
+      currentTab = tab;
+      const loginTab = document.getElementById('tab-login');
+      const registerTab = document.getElementById('tab-register');
+      const loginForm = document.getElementById('form-login');
+      const registerForm = document.getElementById('form-register');
+      dismissAlert();
+
+      if (tab === 'login') {
+        loginTab.className = 'flex-1 py-2.5 rounded-md font-label-lg text-primary bg-surface-container-lowest shadow-sm flex items-center justify-center gap-2 transition-all duration-150';
+        registerTab.className = 'flex-1 py-2.5 rounded-md font-label-lg text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-2 transition-all duration-150';
+        loginForm.classList.remove('hidden');
+        registerForm.classList.add('hidden');
+      } else {
+        registerTab.className = 'flex-1 py-2.5 rounded-md font-label-lg text-primary bg-surface-container-lowest shadow-sm flex items-center justify-center gap-2 transition-all duration-150';
+        loginTab.className = 'flex-1 py-2.5 rounded-md font-label-lg text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-2 transition-all duration-150';
+        registerForm.classList.remove('hidden');
+        loginForm.classList.add('hidden');
+      }
+    }
+
+    function setRole(role) {
+      currentRole = role;
+      const roles = ['mahasiswa', 'panitia', 'admin'];
+      const hint = document.getElementById('role-hint');
+
+      roles.forEach(r => {
+        const btn = document.getElementById('role-btn-' + r);
+        if (r === role) {
+          btn.className = 'role-pill py-2 px-2.5 rounded-lg font-label-md flex flex-col sm:flex-row items-center justify-center gap-1.5 bg-primary-fixed text-primary transition-all shadow-sm';
+        } else {
+          btn.className = 'role-pill py-2 px-2.5 rounded-lg font-label-md flex flex-col sm:flex-row items-center justify-center gap-1.5 bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all';
+        }
+      });
+
+      if (role === 'mahasiswa') {
+        hint.textContent = 'Akses Penuh Mahasiswa';
+      } else if (role === 'panitia') {
+        hint.textContent = 'Konsol Event Organizer';
+      } else {
+        hint.textContent = 'Akses Verifikator Kampus';
+      }
+    }
+
+    function togglePasswordVisibility(inputId, iconId) {
+      const input = document.getElementById(inputId);
+      const icon = document.getElementById(iconId);
+      if (input.type === 'password') {
+        input.type = 'text';
+        icon.textContent = 'visibility_off';
+      } else {
+        input.type = 'password';
+        icon.textContent = 'visibility';
+      }
+    }
+
+    function dismissAlert() {
+      const wrapper = document.getElementById('feedback-alert');
+      const err = document.getElementById('alert-error');
+      const succ = document.getElementById('alert-success');
+      wrapper.classList.add('hidden');
+      err.classList.add('hidden');
+      succ.classList.add('hidden');
+    }
+
+    function showSimulation(type) {
+      const wrapper = document.getElementById('feedback-alert');
+      const err = document.getElementById('alert-error');
+      const succ = document.getElementById('alert-success');
+      wrapper.classList.remove('hidden');
+
+      if (type === 'error') {
+        err.classList.remove('hidden');
+        succ.classList.add('hidden');
+      } else if (type === 'success') {
+        succ.classList.remove('hidden');
+        err.classList.add('hidden');
+      } else if (type === 'loading') {
+        dismissAlert();
+        triggerLoadingVisual();
+      }
+    }
+
+    function triggerLoadingVisual() {
+      const isLogin = currentTab === 'login';
+      const textEl = document.getElementById(isLogin ? 'login-text' : 'register-text');
+      const spinEl = document.getElementById(isLogin ? 'login-spinner' : 'register-spinner');
+      const btn = document.getElementById(isLogin ? 'btn-login-submit' : 'btn-register-submit');
+
+      textEl.classList.add('hidden');
+      spinEl.classList.remove('hidden');
+      btn.disabled = true;
+
+      setTimeout(() => {
+        textEl.classList.remove('hidden');
+        spinEl.classList.add('hidden');
+        btn.disabled = false;
+        showSimulation('success');
+      }, 1500);
+    }
+
+    function handleAuthSubmit(e, mode) {
+      e.preventDefault();
+      const textEl = document.getElementById(mode === 'login' ? 'login-text' : 'register-text');
+      const spinEl = document.getElementById(mode === 'login' ? 'login-spinner' : 'register-spinner');
+      const btn = document.getElementById(mode === 'login' ? 'btn-login-submit' : 'btn-register-submit');
+
+      if (mode === 'register') {
+        const p1 = document.getElementById('reg-pass').value;
+        const p2 = document.getElementById('reg-confirm').value;
+        if (p1 !== p2) {
+          showSimulation('error');
+          document.getElementById('alert-error').querySelector('span.font-label-md').textContent = 'Konfirmasi kata sandi tidak cocok. Harap periksa kembali.';
+          return;
+        }
+      }
+
+      dismissAlert();
+      textEl.classList.add('hidden');
+      spinEl.classList.remove('hidden');
+      btn.disabled = true;
+
+      setTimeout(() => {
+        textEl.classList.remove('hidden');
+        spinEl.classList.add('hidden');
+        btn.disabled = false;
+        if (mode === 'login') {
+          showSimulation('error');
+          document.getElementById('alert-error').querySelector('span.font-label-md').textContent = 'Kredensial tidak valid. Periksa kembali email kampus dan password Anda.';
+        } else {
+          showSimulation('success');
+          document.getElementById('alert-success').querySelector('span.font-label-md').textContent = 'Registrasi Berhasil! Cek tautan aktivasi di inbox email kampus Anda.';
+        }
+      }, 1200);
+    }
+
+    function triggerForgotDemo() {
+      const email = prompt('Masukkan Email Kampus Anda untuk pemulihan akun:', 'mahasiswa@univ.ac.id');
+      if (email) {
+        showSimulation('success');
+        document.getElementById('alert-success').querySelector('span.font-label-md').textContent = 'Tautan reset sandi telah dikirim ke ' + email;
+      }
+    }
+  </script>
+</div></main></body></html>
